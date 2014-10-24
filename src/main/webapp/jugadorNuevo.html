@@ -6,7 +6,12 @@
     
 <head>
         <meta charset="utf-8">
-        <title>OPF5 - Baja de un partido</title>
+        <title>OPF5 - Proponer un jugador</title>
+<!--        <link rel="icon" type="img/ico" href="img/ITR_favicon.ico">
+        <link rel="icon" type="img/ico" href="img/ITR_favicon.html">
+        <meta name="description" content="Con más de 30 años de experiencia, brindamos soluciones integrales en sistemas y el acceso a nuevas tecnologías. Conformamos un equipo de trabajo dinámico con más de 400 profesionales apasionados por proponer y generar soluciones de calidad. Nuestros servicios más destacados: Desarrollos llave en mano, QA y Testing, Monitoreo de aplicaciones, Búsqueda y Selección de profesionales IT, venta de licencias de hardware y software">
+        
+        <meta name="keywords" content="IT Resources, ITR, Daeva, IT, tecnología, staffing de recursos, testing, licencias IBM, web services, software, software factory, consultoría tecnológica, consultoría tecnológica, consultoría de análisis, monitoreo remoto de incidencias, capacitación, desarrollos a medida, desarrollos llave en mano, implementación y migración, implementación y migración, recruiting, búsqueda y selección de personal IT, servicios de calidad, tercerización de testing, tercerización de te...(line truncated)...
         
         <meta name="viewport" content="width=device-width">
 
@@ -22,7 +27,15 @@
         <link rel="stylesheet" type="text/css" href="css/vegas/jquery.vegas.css">
         <link rel="stylesheet" href="css/popup/magnific-popup.css">
  		<link rel="stylesheet" href="js/superslides-0.6.2/dist/stylesheets/superslides.css">
-
+		<link rel="stylesheet" href="css/jquery-ui.css">
+  		<script src="js/jquery-1.10.2.js"></script>
+  		<script src="js/jquery-ui.js"></script>
+  		
+	    <script>
+		  $(function() {
+		    $( "#fechaNacimiento" ).datepicker();
+		  });
+		  </script>
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 		<script src="../fast.fonts.net/jsapi/3dca1e78-579f-4502-8da9-3eb91453e0dc.js"></script>
         
@@ -41,6 +54,19 @@
         
         </script>
         
+        <script>        	
+			$(document).ready(function() {
+			    $('.fieldcontent').not('.info').hide();
+			    $('#tipo_Inscripcion').change(function() {
+			        
+			        if ($(this).val() === 'condicional') {
+			            $("textarea[id='condicion_Inscripcion']").prop('disabled',true);
+			        }else{
+			            $("textarea[id='condicion_Inscripcion']").prop('disabled',false);
+			        };
+			    }); 
+			});
+        </script>
 
     </head>
  
@@ -66,13 +92,14 @@
                 <ul id="nav">
                     <li><a href="jugadorHome.html">Home</a></li>
                     <li><a href="jugadorInscripcion.html">Inscripción</a></li>        
-                    <li  class="current"><a href="jugadorBaja.html">Baja</a></li>
-                    <li><a href="jugadorNuevo.html">Proponer Jugador</a></li>
+                    <li><a href="jugadorBaja.html">Baja</a></li>
+                    <li class="current"><a href="jugadorNuevo.html">Proponer Jugador</a></li>
                     <li><a href="jugadorCalificaciones.html">Calificaciones</a></li>
                     <li><a href="#">Cerrar sesión</a></li>
                 </ul>
             </nav>
         </header>
+        
         <!-- Script para deshabilitar textarea de condición si el tipo de inscripción no es condicional-->
         <script  type="text/javascript">
 		function enableElements() {
@@ -89,49 +116,55 @@
 		</script>
 		        
         
-        <!--SECCION Baja de partido-->
+        <!--SECCION Home-->
         <article id=anchor2 class="content light">
-        	<header class="title one">Baja de un Partido</header>
+        	<header class="title one">Informar Datos</header>
             <div class="spacer"></div>
-            <div class="title two">Complete los datos para darse de baja de un partido</div>
+            <div class="title two">Complete los datos para la inscripción</div>
             <div class="form_insc  dontHide" align="center">
             	<form method="post" id="contact" class="peThemeContactForm" action="" >
                     <div id="personal" class="bay form-horizontal">
-                        <div class="control-group"><!--partidoBaja field-->
-                            <div class="controls">
-                            	Partido<br>
-		                    	<label>
-                                   <select id="partidoBaja" name="partidoBaja" class="required">
-                                    <option value="partido1" selected>10/11/2014 22:00 - Sede Palermo</option>
-                                    <option value="partido2">10/12/2014 19:00 - Sede Almagro</option>
-                                    <option value="partido3">22/12/2014 21:00 - Sede Villa Lugano</option>
-                                    <option value="partido4">27/12/2014 22:00 - Sede Flores</option>
-                                   </select>
-                                </label>                                
-                             </div>
-                        </div>
-                        <div class="control-group"><!--reemplazo field-->
-                            <div class="controls">
-                            	Jugador reemplazante (Opcional)<br>
-		                    	<label>
-								    <select id="reemplazo" name="reemplazo">
-								    	<option value="0" selected>Ninguno</option>
-								        <option value="pedro">Pedro</option>
-								        <option value="lucas">Lucas</option>
-								        <option value="marcelo">Marcelo</option>
-								    </select>
-								</label>                                
-                        	</div>
-                        </div>                           
+                        <div class="control-group">
+                           <div class="controls datosformularios">
+                            Nombre
+                               <input class="required cuadrante" type="text" id="nombre" name="nombre" data-fieldid="0">
+                           </div>
+                       </div>   
+                        <div class="control-group">
+                           <div class="controls datosformularios">
+                            Apellido
+                               <input class="required cuadrante" type="text" id="apellido" name="apellido" data-fieldid="0" >
+                           </div>
+                          </div>  
+                            <div class="control-group">
+                           <div class="controls datosformularios">
+                            Fecha de Nacimiento
+                               <input class="required cuadrante" type="text" id="fechaNacimiento" name="fechaNacimiento" data-fieldid="0">
+                           </div>
+                            
+                       </div>
+                        <div class="control-group">
+                           <div class="controls datosformularios">
+                            Email
+                               <input class="required cuadrante " type="text" id="mail" name="mail" data-fieldid="0" >
+                           </div>
+                       </div>                     
+                        
+                          <div class="control-group">
+                           <div class="controls datosformularios">
+                            Numero de Celular
+                               <input class="required cuadrante" type="text" id="celular" name="celular" data-fieldid="0" >
+                           </div>
+                       </div>     
                         <div class="control-group">
                             <div class="controls send-btn">
-                                <button type="submit" class="contour-btn contour-btn30 red boton_MargenSup">Confirmar Baja</button>
+                                <button type="submit" class="contour-btn contour-btn30 red">Aceptar inscripción</button>
                             </div>
                         </div>
                     </div>
                     <div class="notifications">
                         <div id="contactFormSent" class="formSent alert alert-success">
-                            <strong>Baja Exitosa con/sin sanción</strong> </div>
+                            <strong>Inscripción Exitosa</strong> </div>
                         <div id="contactFormError" class="formError alert alert-error">
                             <strong>Ha ocurrido un error!</strong> Por favor chequeá los campos de abajo y corregí el dato indicado.</div>
                     </div>
@@ -155,7 +188,25 @@
 			.white-popup img {width: auto; max-width: 100%;}
 			.mfp-content{height: 90%;}
 		</style>
+    
 
+        <a href="#" class="scrollup">^</a>
+        <div class="socialFooter">
+        	<div class="social-icons">
+                <div class="social">
+                <img src="img/redes.gif" alt='redes' width="112" height="27" usemap="#Map">
+                <map name="Map">
+                  <area shape="rect" coords="2,2,19,24" href="https://www.facebook.com/itresources" target="_blank" alt="facebook">
+                  <area shape="rect" coords="24,2,45,24" href="https://twitter.com/ITResourcesAR" target="_blank" alt="twitter">
+                  <area shape="rect" coords="53,2,79,25" href="https://plus.google.com/117924129194648082931/posts" target="_blank" alt="g+">
+                  <area shape="rect" coords="84,3,107,24" href="https://www.linkedin.com/company/144854?trk=hp-feed-gorilla-suggestedsearch1-companytext" target="_blank" alt="linkedin">
+                </map>
+
+              </div>
+            </div>
+            <div class="clear"></div>
+
+        </div>
         <script src="../ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
         <script src="../ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>

@@ -87,7 +87,10 @@ label:before {
     margin-left: 10px;
 }
 #mail{
-width: 300px;    
+	width: 295px;    
+}
+#celular{
+	width:194px;
 }
 .cuadrante1{
     margin-left: 10px;
