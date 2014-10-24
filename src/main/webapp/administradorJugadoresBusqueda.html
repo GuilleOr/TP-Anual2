@@ -82,88 +82,109 @@
 
         <article id=anchor2 class="content light">
         	<header class="title one">Búsqueda de Jugadores</header>
-            <div class="spacer"></div>
-            <br><br>
-            <div class="form_insc  dontHide" align="center">
+            <div class="spacer"></div><br>
+            <!-- Comienzo estructura-->
+            <div align="center">
             	<form method="post" id="contact" class="peThemeContactForm" action="" >
-                    <div id="personal" class="bay form-horizontal">
-                        <div class="control-group">
-                           <div class="controls datosformulariosbusqueda">
-                               <input type="radio" name="busqueda" value="porNombre">
-                            Por nombre ("Comienza con...")
-                               <input class="cuadranteBusqueda" type="text" id="xnombre" name="xnombre" data-fieldid="0">
-                           </div>
-                        </div>   
-                        <div class="control-group">
-                           <div class="controls datosformulariosbusqueda">
-                               <input type="radio" name="busqueda" value="M">
-                            Por fecha de nacimiento ("Anterior a...")
-                               <input class="cuadranteBusqueda" type="text" id="xnacimiento" value="2014/10/29" readonly name="xnacimiento"><input type="button" value="Cal" onclick="displayCalendar(document.forms[0].xnacimiento,'yyyy/mm/dd',this)">
-                           </div>
-                        </div>  
-                        <div class="control-group">
-                           <div class="controls datosformulariosbusqueda">
-                               <input type="radio" name="busqueda" value="handicapDesde">
-                            Hándicap ("Desde...")
-                               <input class="cuadranteBusqueda" type="text" id="xhdesde" name="xhdesde" data-fieldid="0">
-                           </div>
-                        </div>
-                        <div class="control-group">
-                           <div class="controls datosformulariosbusqueda">
-                               <input type="radio" name="busqueda" value="handicapHasta">
-                            Hándicap ("Hasta...")
-                               <input class="cuadranteBusqueda " type="text" id="xhhasta" name="xhhasta" data-fieldid="0" >
-                           </div>
-                        </div>                     
-                           <div class="control-group">
-                           <div class="controls datosformulariosbusqueda">
-                               <input type="radio" name="busqueda" value="promedioDesde">
-                            Promedio del último partido ("Desde...")
-                               <input class="cuadranteBusqueda" type="text" id="xpdesde" name="xpdesde" data-fieldid="0">
-                           </div>
-                        </div>
-                        <div class="control-group">
-                           <div class="controls datosformulariosbusqueda">
-                               <input type="radio" name="busqueda" value="promedioHasta">
-                            Promedio del último partido ("Hasta...")
-                               <input class="cuadranteBusqueda " type="text" id="xphasta" name="xphasta" data-fieldid="0" >
-                           </div>
-                       </div>                                            
-                        <div class="control-group">
-                            <div class="controls datosformulariosbusqueda3">
-                                <input type="radio" name="busqueda" value="conInfacciones">
-                                Jugadores Con Infracciones
-<!--                                <input class="required cuadrante" type="text" id="xjinfraccion" name="xjinfraccion" data-fieldid="0" >
--->                            </div>
-                        </div>
-                        <div class="control-group">
-                            <div class="controls datosformulariosbusqueda3">
-                                <input type="radio" name="busqueda" value="sinInfracciones">
-                                Jugadores Sin Infracciones
-<!--                                <input class="required cuadrante" type="text" id="xjsininfraccion" name="xjsininfraccion" data-fieldid="0" >
--->                            </div>
-                        </div>
-                        <div class="control-group">
-                            <div class="controls datosformulariosbusqueda3">
-                                <input type="radio" name="busqueda" value="listaJugadores">
-                                Listado de Jugadores
-<!--                                <input class="required cuadrante" type="text" id="xjsininfraccion" name="xjsininfraccion" data-fieldid="0" >
--->                            </div>
-                        </div>
-                        <div class="control-group">
-                            <div class="controls send-btn">
-                                <button type="submit" class="contour-btn contour-btn30 red">Buscar</button>
-                            </div>
-                        </div>
-                        </div>
-                    <div class="notifications">
-                        <div id="contactFormSent" class="formSent alert alert-success">
-                            <strong>Búsqueda Exitosa</strong> </div>
-                        <div id="contactFormError" class="formError alert alert-error">
-                            <strong>Ha ocurrido un error!</strong> Por favor chequeá los campos de abajo y corregí el dato indicado.</div>
-                    </div>
+            		<table cellpadding="6px" cellspacing="5px" width="500px">
+            			<tr>
+            				<td>
+            					<div class="controls datosformulariosbusqueda">
+	                               <input type="radio" name="busqueda" value="porNombre">
+	                            	Por nombre ("Comienza con...")
+	                               <input class="cuadranteBusqueda" type="text" id="xnombre" name="xnombre" data-fieldid="0">
+	                           </div>
+            				</td>
+            			</tr>
+            			<tr>
+            				<td>
+            					<div class="controls datosformulariosbusqueda">
+	                               <input type="radio" name="busqueda" value="nacimientoAnteriorA">
+	                          	   Por fecha de nacimiento ("Anterior a...")
+	                               <input class="cuadranteBusqueda" type="text" id="xnacimiento" value="2014/10/29" readonly name="xnacimiento"><input type="button" value="Cal" onclick="displayCalendar(document.forms[0].xnacimiento,'yyyy/mm/dd',this)">
+                           		</div>
+            				</td>
+            			</tr>
+            			<tr>
+            				<td>
+            					<div class="controls datosformulariosbusqueda">
+	                               <input type="radio" name="busqueda" value="handicapDesde">
+                        		    Hándicap ("Desde...")
+	                               <input class="cuadranteBusqueda" type="text" id="xhdesde" name="xhdesde" data-fieldid="0">
+                            	</div>
+            				</td>
+            			</tr>
+            			<tr>
+            				<td>
+            					<div class="controls datosformulariosbusqueda">
+	                             	<input type="radio" name="busqueda" value="handicapHasta">
+	                           	 	Hándicap ("Hasta...")
+	                                <input class="cuadranteBusqueda " type="text" id="xhhasta" name="xhhasta" data-fieldid="0" >
+	                           </div>
+            				</td>
+            			</tr>
+            			<tr>
+            				<td>
+            					<div class="controls datosformulariosbusqueda">
+	                               <input type="radio" name="busqueda" value="promedioDesde">
+	                            	Promedio del último partido ("Desde...")
+	                               <input class="cuadranteBusqueda" type="text" id="xpdesde" name="xpdesde" data-fieldid="0">
+	                           </div>
+            				</td>
+            			</tr>
+            			<tr>
+            				<td>
+            					<div class="controls datosformulariosbusqueda">
+	                               <input type="radio" name="busqueda" value="promedioHasta">
+	                            	Promedio del último partido ("Hasta...")
+	                               <input class="cuadranteBusqueda " type="text" id="xphasta" name="xphasta" data-fieldid="0" >
+	                           </div>
+            				</td>
+            			</tr>
+            			<tr>
+            				<td>
+            					<div class="controls datosformulariosbusqueda3">
+	                                <input type="radio" name="busqueda" value="conInfacciones">
+	                                Jugadores Con Infracciones
+	                            </div>
+            				</td>
+            			</tr>
+        				<tr>
+            				<td>
+            					<div class="controls datosformulariosbusqueda3">
+	                                <input type="radio" name="busqueda" value="sinInfracciones">
+                                	Jugadores Sin Infracciones
+	                            </div>
+            				</td>
+            			</tr>
+        				<tr>
+            				<td>
+            					<div class="controls datosformulariosbusqueda3">
+	                                <input type="radio" name="busqueda" value="listaJugadores">
+                                	Listado de Jugadores
+	                            </div>
+            				</td>
+            			</tr>
+            			<tr>
+            				<td>
+            					<div class="controls send-btn">
+	                                <button type="submit" class="contour-btn contour-btn30 red">Buscar</button>
+	                            </div>
+            				</td>
+            			</tr>
+            			<tr>
+            				<td>
+            					<div class="notifications">
+			                        <div id="contactFormSent" class="formSent alert alert-success">
+			                            <strong>Búsqueda Exitosa</strong> </div>
+			                        <div id="contactFormError" class="formError alert alert-error">
+			                            <strong>Ha ocurrido un error!</strong> Por favor chequeá los campos de abajo y corregí el dato indicado.</div>
+			                    </div>
+            				</td>
+            			</tr>
+            		</table>
                 </form>
-            </div>
+            </div>	
 
         </article>
 
