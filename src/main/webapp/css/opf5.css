@@ -123,8 +123,6 @@ width: 300px;
 #xphasta{
     width: 140px;
 }
-
-
 #horaPartidoNuevo{
 	width: 98%;
 }
@@ -133,5 +131,10 @@ width: 300px;
 	width:84%;
 }
 
-
-
+/* administradorJugadorNuevo*/
+.datosformulariosbusqueda2{
+    margin-right: 290px; 
+}
+.datosformulariosbusqueda3{
+    margin-right: 250px;
+}
