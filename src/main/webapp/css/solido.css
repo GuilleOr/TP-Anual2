@@ -463,6 +463,7 @@ html, body {
 .menua ul li:last-child a { border: none; }
 
 #nav .current a {color: #EB7226 !important;}
+.currentMenua a {color: #EB7226 !important;}
 .logo{
 	float: left;
 	color: #000;
