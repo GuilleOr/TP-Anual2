@@ -69,3 +69,7 @@ label:before {
 .boton_MargenSup{
 	margin-top: 40px!important;
 }
+
+#tablaNombres{ 
+    width:100%; align:center; margin-top: 20px; margin-bottom: 10px
+}
