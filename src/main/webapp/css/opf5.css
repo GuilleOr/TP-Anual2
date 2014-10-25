@@ -123,6 +123,7 @@ width: 300px;
 #xphasta{
     width: 140px;
 }
+/*administradorPartidoNuevo*/
 #horaPartidoNuevo{
 	width: 98%;
 }
@@ -130,7 +131,15 @@ width: 300px;
 #fechaPartidoNuevo{
 	width:84%;
 }
+/*administradorPartidoNuevo*/
+#horaPartidoModificado{
+	width: 98%;
+}
 
+#fechaPartidoModificado{
+	width: 98%;
+}
+Modificado
 /* administradorJugadorNuevo*/
 .datosformulariosbusqueda2{
     margin-right: 290px; 
@@ -143,7 +152,6 @@ width: 300px;
 }
 
 /* generarFormaciones */
-
 .datosformularioformaciones{
     text-align: left;
     margin-left: 100px;
