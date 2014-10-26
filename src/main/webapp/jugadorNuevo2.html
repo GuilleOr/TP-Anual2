@@ -27,7 +27,10 @@
         <link rel="stylesheet" type="text/css" href="css/vegas/jquery.vegas.css">
         <link rel="stylesheet" href="css/popup/magnific-popup.css">
  		<link rel="stylesheet" href="js/superslides-0.6.2/dist/stylesheets/superslides.css">
-<link rel="stylesheet" href="css/jquery-ui.css">
+
+
+		<!-- Agregar para calendario-->
+  		<link rel="stylesheet" href="css/jquery-ui.css">
   		<script src="js/jquery-1.10.2.js"></script>
   		<script src="js/jquery-ui.js"></script>
   		
@@ -36,6 +39,8 @@
 		    $( "#fechaNacimiento" ).datepicker();
 		  });
 		  </script>
+		<!-- Fin calendario-->
+		
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 		<script src="../fast.fonts.net/jsapi/3dca1e78-579f-4502-8da9-3eb91453e0dc.js"></script>
         
@@ -93,7 +98,7 @@
                     <li><a href="jugadorHome.html">Home</a></li>
                     <li><a href="jugadorInscripcion.html">Inscripción</a></li>        
                     <li><a href="jugadorBaja.html">Baja</a></li>
-                    <li class="current"><a href="#">Proponer Jugador</a></li>
+                    <li class="current"><a href="#">Nuevo Jugador</a></li>
                     <li><a href="#">Calificaciones</a></li>
                     <li><a href="#">Cerrar sesión</a></li>
                 </ul>
@@ -118,44 +123,25 @@
         
         <!--SECCION Home-->
         <article id=anchor2 class="content light">
-        	<header class="title one">Informar Datos</header>
+        	<header class="title one">Inscripción</header>
             <div class="spacer"></div>
             <div class="title two">Complete los datos para la inscripción</div>
             <div class="form_insc  dontHide" align="center">
             	<form method="post" id="contact" class="peThemeContactForm" action="" >
                     <div id="personal" class="bay form-horizontal">
-                        <div class="control-group">
-                           <div class="controls datosformularios">
-                            Nombre
-                               <input class="required cuadrante" type="text" id="nombre" name="nombre" data-fieldid="0">
-                           </div>
-                       </div>   
-                        <div class="control-group">
-                           <div class="controls datosformularios">
-                            Apellido
-                               <input class="required cuadrante" type="text" id="apellido" name="apellido" data-fieldid="0" >
-                           </div>
-                          </div>  
-                            <div class="control-group">
-                           <div class="controls datosformularios">
-                            Fecha de Nacimiento
-                               <input class="required cuadrante" type="text" id="fechaNacimiento" name="fechaNacimiento" data-fieldid="0">
-                           </div>
-                            
-                       </div>
-                        <div class="control-group">
-                           <div class="controls datosformularios">
-                            Email
-                               <input class="required cuadrante " type="text" id="mail" name="mail" data-fieldid="0" >
-                           </div>
-                       </div>                     
-                        
-                          <div class="control-group">
-                           <div class="controls datosformularios">
-                            Numero de Celular
-                               <input class="required cuadrante" type="text" id="celular" name="celular" data-fieldid="0" >
+
+
+
+
+                       <div class="control-group">
+                           <div class="controls">
+                            Fecha de Nacimiento<br>
+                               <input class="required span9" type="text" id="fechaNacimiento"name="fechaNacimiento" data-fieldid="0">
                            </div>
                        </div>     
+                       
+                       
+                       
                         <div class="control-group">
                             <div class="controls send-btn">
                                 <button type="submit" class="contour-btn contour-btn30 red">Aceptar inscripción</button>
