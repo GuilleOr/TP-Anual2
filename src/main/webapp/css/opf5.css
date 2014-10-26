@@ -69,3 +69,25 @@ label:before {
 .boton_MargenSup{
 	margin-top: 40px!important;
 }
+.datosformularios{
+    text-align: left;
+    margin-left: 100px;
+}
+.cuadrante{
+    margin-left: 10px;
+}
+#mail{
+width: 300px;    
+}
+.cuadrante1{
+    margin-left: 10px;
+}
+#fecha {
+    width: 180px;
+}
+#nombre {
+    width: 275px; 
+}
+#apellido {
+    width: 275px;
+}

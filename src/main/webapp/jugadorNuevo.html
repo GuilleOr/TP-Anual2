@@ -85,7 +85,7 @@
                     <li><a href="jugadorHome.html">Home</a></li>
                     <li><a href="jugadorInscripcion.html">Inscripción</a></li>        
                     <li><a href="jugadorBaja.html">Baja</a></li>
-                    <li class="current"><a href="#">Nuevo Jugador</a></li>
+                    <li class="current"><a href="#">Proponer Jugador</a></li>
                     <li><a href="#">Calificaciones</a></li>
                     <li><a href="#">Cerrar sesión</a></li>
                 </ul>
@@ -110,43 +110,44 @@
         
         <!--SECCION Home-->
         <article id=anchor2 class="content light">
-        	<header class="title one">Inscripción</header>
+        	<header class="title one">Informar Datos</header>
             <div class="spacer"></div>
             <div class="title two">Complete los datos para la inscripción</div>
             <div class="form_insc  dontHide" align="center">
             	<form method="post" id="contact" class="peThemeContactForm" action="" >
                     <div id="personal" class="bay form-horizontal">
-                        <div class="control-group"><!--partido field-->
-                            <div class="controls">
-                            	Partido<br>
-		                    	<label>
-								    <select id="partido_Inscripcion" name="partido_Inscripcion">
-								        <option selected>10/11/2014 22:00 - Sede Palermo</option>
-								        <option>10/12/2014 19:00 - Sede Almagro</option>
-								        <option>22/12/2014 21:00 - Sede Villa Lugano</option>
-								        <option>27/12/2014 22:00 - Sede Flores</option>
-								    </select>
-								</label>                                
-                        	</div>
-                        </div>
-                        <div class="control-group"><!--name field-->
-                            <div class="controls">
-                            	Tipo de Inscripción<br>
-		                    	<label>
-								    <select id="tipo_Inscripcion" name="tipo_Inscripcion" onchange="enableElements();">
-								        <option value="estandar">Estándar</option>
-								        <option value="solidaria">Solidaria</option>
-								        <option value="condicional">Condicional</option>
-								    </select>
-								</label>                                
-                        	</div>
-                        </div>                       
-                        <div class="control-group"><!--message field -->
-                            <div class="controls">
-                            	Condición
-                                <textarea id="condicion_Inscripcion" name="condicion_Inscripcion" disabled='disabled' rows="12" class="span9" data-fieldid="2" style="background-color:#fafafa "></textarea>
-                            </div>
-                        </div>       
+                        <div class="control-group">
+                           <div class="controls datosformularios">
+                            Nombre
+                               <input class="required cuadrante" type="text" id="nombre" name="nombre" data-fieldid="0">
+                           </div>
+                       </div>   
+                        <div class="control-group">
+                           <div class="controls datosformularios">
+                            Apellido
+                               <input class="required cuadrante" type="text" id="apellido" name="apellido" data-fieldid="0" >
+                           </div>
+                          </div>  
+                            <div class="control-group">
+                           <div class="controls datosformularios">
+                            Fecha de Nacimiento
+                               <input class="required cuadrante" type="text" id="fecha" name="fecha" data-fieldid="0">
+                           </div>
+                            
+                       </div>
+                        <div class="control-group">
+                           <div class="controls datosformularios">
+                            Email
+                               <input class="required cuadrante " type="text" id="mail" name="mail" data-fieldid="0" >
+                           </div>
+                       </div>                     
+                        
+                          <div class="control-group">
+                           <div class="controls datosformularios">
+                            Numero de Celular
+                               <input class="required cuadrante" type="text" id="celular" name="celular" data-fieldid="0" >
+                           </div>
+                       </div>     
                         <div class="control-group">
                             <div class="controls send-btn">
                                 <button type="submit" class="contour-btn contour-btn30 red">Aceptar inscripción</button>
