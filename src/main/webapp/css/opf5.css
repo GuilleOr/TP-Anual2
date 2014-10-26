@@ -102,5 +102,28 @@ width: 300px;
     width: 275px;
 }
 #xnombre {
+    width: 201px; 
+}
+
+#xnacimiento {
     width: 100px; 
 }
+
+#xhdesde{
+    width: 278px;
+}
+
+#xhhasta{
+    width: 281px;
+}
+#xpdesde{
+    width: 138px;
+}
+
+#xphasta{
+    width: 140px;
+}
+
+
+
+
