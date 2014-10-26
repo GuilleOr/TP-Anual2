@@ -22,7 +22,11 @@
 
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 		<script src="../fast.fonts.net/jsapi/3dca1e78-579f-4502-8da9-3eb91453e0dc.js"></script>
-        
+<!-- Calendario -->                
+        <link type="text/css" rel="stylesheet" href="css/dhtmlgoodies_calendar.css?random=20051112" media="screen">
+	<SCRIPT type="text/javascript" src="js/dhtmlgoodies_calendar.js?random=20060118"></script>
+
+                
         <!-- codigo de seguimiento para Goggle Analitycs -->
 		<script type="text/javascript">
         
@@ -81,7 +85,79 @@
         <article id=anchor2 class="content light">
         	<header class="title one">Jugadores - Búsqueda</header>
             <div class="spacer"></div>
-            
+            <br><br>
+            <div class="form_insc  dontHide" align="center">
+            	<form method="post" id="contact" class="peThemeContactForm" action="" >
+                    <div id="personal" class="bay form-horizontal">
+                        <div class="control-group">
+                           <div class="controls datosformularios">
+                            Por nombre ("Comienza con...")
+                               <input class="required cuadrante" type="text" id="xnombre" name="xnombre" data-fieldid="0">
+                           </div>
+                        </div>   
+                        <div class="control-group">
+                           <div class="controls datosformularios">
+                            Por fecha de nacimiento ("Anterior a...")
+                               <input class="required cuadrante" type="text" id="xnacimiento" value="2014/10/29" readonly name="xnacimiento"><input type="button" value="Cal" onclick="displayCalendar(document.forms[0].xnacimiento,'yyyy/mm/dd',this)">
+                           </div>
+                        </div>  
+                        <div class="control-group">
+                           <div class="controls datosformularios">
+                            Hándicap ("Desde...")
+                               <input class="required cuadrante" type="text" id="xhdesde" name="xhdesde" data-fieldid="0">
+                           </div>
+                        </div>
+                        <div class="control-group">
+                           <div class="controls datosformularios">
+                            Hándicap ("Hasta...")
+                               <input class="required cuadrante " type="text" id="xhhasta" name="xhhasta" data-fieldid="0" >
+                           </div>
+                        </div>                     
+                           <div class="control-group">
+                           <div class="controls datosformularios">
+                            Promedio del último partido ("Desde...")
+                               <input class="required cuadrante" type="text" id="xpdesde" name="xpdesde" data-fieldid="0">
+                           </div>
+                        </div>
+                        <div class="control-group">
+                           <div class="controls datosformularios">
+                            Promedio del último partido ("Hasta...")
+                               <input class="required cuadrante " type="text" id="xphasta" name="xphasta" data-fieldid="0" >
+                           </div>
+                       </div>                                            
+                        <div class="control-group">
+                            <div class="controls datosformularios">
+                                Jugadores Con Infracciones
+                                <input class="required cuadrante" type="text" id="xjinfraccion" name="xjinfraccion" data-fieldid="0" >
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="controls datosformularios">
+                                Jugadores Sin Infracciones
+                                <input class="required cuadrante" type="text" id="xjsininfraccion" name="xjsininfraccion" data-fieldid="0" >
+                            </div>
+                        </div>
+                            <div class="control-group">
+                            <div class="controls datosformularios">
+                                Listado de Jugadores
+                                <input class="required cuadrante" type="text" id="listado" name="listado" data-fieldid="0" >
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="controls send-btn">
+                                <button type="submit" class="contour-btn contour-btn30 red">Buscar</button>
+                            </div>
+                        </div>
+                        </div>
+                    <div class="notifications">
+                        <div id="contactFormSent" class="formSent alert alert-success">
+                            <strong>Búsqueda Exitosa</strong> </div>
+                        <div id="contactFormError" class="formError alert alert-error">
+                            <strong>Ha ocurrido un error!</strong> Por favor chequeá los campos de abajo y corregí el dato indicado.</div>
+                    </div>
+                </form>
+            </div>
+
         </article>
 
 

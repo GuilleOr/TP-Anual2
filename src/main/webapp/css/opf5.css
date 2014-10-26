@@ -9,6 +9,16 @@
 	margin-right: auto;	
 }
 
+.form_busqueda{
+	float: top;
+	width: 600px;
+	padding: 0 0 0 28px;
+	line-height: 25px;
+        margin-left: 30px;
+	margin-right: auto;	
+}
+
+
 /* The CSS */
 select {
     padding:3px;
@@ -86,8 +96,11 @@ width: 300px;
     width: 180px;
 }
 #nombre {
-    width: 275px; 
+    width: 275px;
 }
 #apellido {
     width: 275px;
+}
+#xnombre {
+    width: 100px; 
 }
