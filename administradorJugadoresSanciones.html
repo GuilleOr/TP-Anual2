@@ -7,15 +7,7 @@
 <head>
         <meta charset="utf-8">
         <title>OPF5</title>
-<!--        <link rel="icon" type="img/ico" href="img/ITR_favicon.ico">
-        <link rel="icon" type="img/ico" href="img/ITR_favicon.html">
-        <meta name="description" content="Con más de 30 años de experiencia, brindamos soluciones integrales en sistemas y el acceso a nuevas tecnologías. Conformamos un equipo de trabajo dinámico con más de 400 profesionales apasionados por proponer y generar soluciones de calidad. Nuestros servicios más destacados: Desarrollos llave en mano, QA y Testing, Monitoreo de aplicaciones, Búsqueda y Selección de profesionales IT, venta de licencias de hardware y software">
-        
-        <meta name="keywords" content="IT Resources, ITR, Daeva, IT, tecnología, staffing de recursos, testing, licencias IBM, web services, software, software factory, consultoría tecnológica, consultoría tecnológica, consultoría de análisis, monitoreo remoto de incidencias, capacitación, desarrollos a medida, desarrollos llave en mano, implementación y migración, implementación y migración, recruiting, búsqueda y selección de personal IT, servicios de calidad, tercerización de testing, tercerización de testing, arquitectura orientada a servicios, SOA, SAP, Java, Java J2EE, Struts, Struts 1 y 2, Spring Framework, Java Server Faces, Hibernate, GWT, FreeMarker, JBPM, Tiles, Velocity, Seam, Drools, Wicket, Ibatis, EJB, Ajax, JMS, Flex, Python, Ruby, PHP, SWT, JDBC, DB2, C++, C#, cobol, ASP, ASP.NET, .NET, oracle, visual basic, mainframe, AS 400, power builder, QA, quality assurance, calidad, CMMI, ISO 9001:2008, analista de sistemas, analista funcional, analista programador, lider de proyecto, project manager, arquitecto, programación, PMO, Optics, Ingenieros,PL/SQL, Analista de procesos, Administrador Jboss, Operador, Soporte Técnico, Operador DataCenter, Drupal, QC, engineer, Operador, Técnico, Supervisor, management, DBA, Coordinador IT, Network Designer, Game Developer, NOC">
-        
-        <meta name="viewport" content="width=device-width">
-
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="icon" type="img/ico" href="img/loading.gif">
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
@@ -46,20 +38,6 @@
         
         </script>
         
-        <script>        	
-			$(document).ready(function() {
-			    $('.fieldcontent').not('.info').hide();
-			    $('#tipo_Inscripcion').change(function() {
-			        
-			        if ($(this).val() === 'condicional') {
-			            $("textarea[id='condicion_Inscripcion']").prop('disabled',true);
-			        }else{
-			            $("textarea[id='condicion_Inscripcion']").prop('disabled',false);
-			        };
-			    }); 
-			});
-        </script>
-
     </head>
  
     <body>
@@ -69,50 +47,41 @@
             </div>
         </div>
 
-        <!--<section id="home" class="clear">-->
-            <!--<div id="anchor1">--><!--<div>
-                <ul class="slider-controls">
-                    <li><a id="vegas-next" class="s-next" href="#"></a></li>
-                    <li><a id="vegas-prev" class="s-prev" href="#"></a></li>
-                </ul>
-            </div>
-        </section>-->
         <div id="logx"></div>
         <header class="header">
-            <div class="logo"><img src="img/logos/logoSistema.png" width="70" alt='IT Resources'></div>
-               <nav class="menu">
-                <ul id="nav">
-                    <li><a href="jugadorHome.html">Home</a></li>
-                    <li class="current"><a href="#">Inscripción</a></li>        
-                    <li><a href="jugadorBaja.html">Baja</a></li>
-                    <li><a href="jugadorNuevo.html">Proponer Jugador</a></li>
-                    <li><a href="#">Calificaciones</a></li>
-                    <li><a href="#">Cerrar sesión</a></li>
-                </ul>
-            </nav>
+            <div class="logo">
+                <img src="img/logos/logoSistema.jpg" width="70" alt='logoOPF5'>
+            </div>
+            
+            <ul class="menua">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Partidos</a>
+                        <ul>
+                            <li><a href="#">Alta</a></li>
+                            <li><a href="#">Baja</a></li>
+                            <li><a href="#">Modificaciones</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Generar<br>Formaciones</a></li>
+                    <li><a href="#">Confirmar<br>Equipos</a></li>
+                    <li><a href="sedes.html">Sedes</a></li>
+                    <li><a href="#">Jugadores</a>
+                        <ul>
+                            <li><a href="#">Búsqueda</a></li>
+                            <li><a href="#">Solicitudes</a></li>
+                            <li><a href="#">Sanciones</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="index.html">Cerrar<br>Sesión</a></li>
+              
+            </ul>
+
         </header>
-        
-        <!-- Script para deshabilitar textarea de condición si el tipo de inscripción no es condicional-->
-        <script  type="text/javascript">
-		function enableElements() {
-		    if ($("#tipoInscripcion").val() == 'condicional') {
-		        $("#condicionInscripcion").removeAttr('disabled');
-		    	document.getElementById("condicionInscripcion").style.background = "#F3F3F3";
-		    }    
-		     
-		    if ($("#tipoInscripcion").val() == 'estandar' || $("#tipoInscripcion").val() == 'solidaria') {
-		        $("#condicionInscripcion").prop('disabled', true);
-		    	document.getElementById("condicionInscripcion").style.background = "#fafafa";
-		    }
-		};
-		</script>
-		        
-        
-        <!--SECCION Home-->
+
         <article id=anchor2 class="content light">
-        	<header class="title one">Inscripción</header>
+        	<header class="title one">Aplicar Sanción</header>
             <div class="spacer"></div>
-            <div class="title two">Complete los datos para la inscripción</div>
+                        <div class="title two">Complete los datos para la inscripción</div>
             <div class="form_insc  dontHide" align="center">
             	<form method="post" id="contact" class="peThemeContactForm" action="" >
                     <div id="personal" class="bay form-horizontal">
@@ -120,8 +89,7 @@
                             <div class="controls">
                             	Partido<br>
 		                    	<label>
-				
-                                            <select id="partidoInscripcion" name="partidoInscripcion">
+								    <select id="partidoInscripcion" name="partidoInscripcion">
 								        <option selected>10/11/2014 22:00 - Sede Palermo</option>
 								        <option>10/12/2014 19:00 - Sede Almagro</option>
 								        <option>22/12/2014 21:00 - Sede Villa Lugano</option>
@@ -134,12 +102,12 @@
                             <div class="controls">
                             	Tipo de Inscripción<br>
 		                    	<label>
-                                            <select id="tipoInscripcion" name="tipoInscripcion" onchange="enableElements();">
-                                                <option value="estandar">Estándar</option>
-                                                <option value="solidaria">Solidaria</option>
-                                                <option value="condicional">Condicional</option>
-                                            </select>
-                                        </label>                                
+								    <select id="tipoInscripcion" name="tipoInscripcion" onchange="enableElements();">
+								        <option value="estandar">Estándar</option>
+								        <option value="solidaria">Solidaria</option>
+								        <option value="condicional">Condicional</option>
+								    </select>
+								</label>                                
                         	</div>
                         </div>                       
                         <div class="control-group"><!--message field -->
@@ -162,25 +130,10 @@
                     </div>
                 </form>
             </div>
+            
         </article>
-        <!--FIN SECCION SERVICIOS-->
 
-        <style>
-        	.white-popup {
-			  position: relative;
-			  background: #FFF;
-			  width: auto;
-			  margin: 0px auto;
-			  max-width: 100%;
-			}
-			.white-popup .image {height: auto;}
-			.white-popup .info {height: auto; padding: 5px 20px 20px 20px;}
-			.white-popup .info .popup-description {color: #555; font-size: 14px;}
 
-			.white-popup img {width: auto; max-width: 100%;}
-			.mfp-content{height: 90%;}
-		</style>
-    
         <script src="../ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
         <script src="../ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
@@ -207,3 +160,5 @@
     </body>
 
 </html>
+
+

@@ -39,7 +39,6 @@
         </script>
         
     </head>
-    
  
     <body>
     	<div id="mask">
@@ -76,96 +75,69 @@
                     <li><a href="index.html">Cerrar<br>Sesión</a></li>
               
             </ul>
-             <script>        	
-			$(document).ready(function() {
-			    $('.fieldcontent').not('.info').hide();
-			    $('#propuesto').change(function() {
-			        
-			        if ($(this).val() === 'rechazar') {
-			            $("textarea[id='condicion_Propuesto']").prop('disabled',true);
-			        }else{
-			            $("textarea[id='condicion_Propuesto']").prop('disabled',false);
-			        };
-			    }); 
-			});
-        </script>
 
         </header>
-        <!-- Script para deshabilitar textarea de condición si el tipo de inscripción no es condicional-->
-        <script  type="text/javascript">
-		function enableElements() {
-		    if ($("#propuesto").val() == 'rechazar') {
-		        $("#condicionPropuesto").removeAttr('disabled');
-		    	document.getElementById("condicionPropuesto").style.background = "#F3F3F3";
-		    }    
-		     
-		    if ($("#propuesto").val() == 'aceptar' ) {
-		        $("#condicionPropuesto").prop('disabled', true);
-		    	document.getElementById("condicionPropuesto").style.background = "#fafafa";
-		    }
-		};
-		</script>
 
         <article id=anchor2 class="content light">
-        	<header class="title one">Solicitudes Pendientes</header>
-                <div class="spacer"></div> </br>
+        	<header class="title one">Aplicar Sanción</header>
+            <div class="spacer"></div>
+                        </br>
             <div class="form_insc  dontHide" align="center">
             	<form method="post" id="contact" class="peThemeContactForm" action="" >
                     <div id="personal" class="bay form-horizontal">
-                        <div class="control-group">
-                           <div class="control-group"><!--name field-->
-                            <div class="control-group"><!--tipoInscripcion field-->
-                             <div class="control-group"><!--tipoInscripcion field-->
+                        <div class="control-group"><!--Jugadores a sancionar field-->
                              <div class="controls">
-                            	Jugador Propuesto
+                            	Seleccionar Jugador<br>
 		                    	<label>
-                                            <select id="jugadorPropuesto" name="jugadorPropuesto">
-
-                                                <option value="pedro">Pedro</option>
-                                                <option value="lucas">Lucas</option>
-                                                <option value="marcelo">Marcelo</option>
-                                            </select>
-                                        </label>                                
-                             </div>
-                            <div class="controls">
-                            	Confirmar<br>
-		                    	<label>
-                                            <select id="propuesto" name="propuesto" onchange="enableElements();">
-                                                <option value="aceptar">Aceptar</option>
-                                                <option value="rechazar">Rechazar</option>								    </select>
-                                        </label>                                
+								    <select id="reemplazo" name="reemplazo"  >
+								        <option value="pedro">Pedro</option>
+								        <option value="lucas">Lucas</option>
+								        <option value="marcelo">Marcelo</option>
+								    </select>
+								</label>                                
                         	</div>
-                        </div>                       
-                        <div class="control-group"><!--message field -->
-                            <div class="controls">
-                            	Rechazar
-                                <textarea id="condicionPropuesto" name="condicionPropuesto    " disabled='disabled' rows="12" class="span9" data-fieldid="2" style="background-color:#fafafa "></textarea>
-                            </div>
-                        </div> 
                         </div>
-                        </div>    
-                       </div>    
+                        <div class="control-group"><!--Sanción field-->
+                            <div class="controls">
+                            	Seleccionar Sanción<br>
+		                    	<label>
+								    <select id="tipoInscripcion" name="tipoInscripcion" onchange="enableElements();">
+								        <option value="ausencia">Ausencia al Partido</option>
+								        <option value="reemoplzante">Falta Reemplazante</option>
+								        <option value="brusco">Juego Brusco</option>
+                                                                        <option value="tarde">LLegó tarde</option>
+                                                                        <option value="baja">Baja de un Partido</option>
+								    </select>
+								</label>                                
+                        	</div>
+                        </div>         
+                        <div class="control-group"><!--partido field-->
+                            <div class="controls">
+                            	Partido<br>
+		                    	<label>
+								    <select id="partidoInscripcion" name="partidoInscripcion">
+								        <option>10/11/2014 22:00 - Sede Palermo</option>
+								        <option>10/12/2014 19:00 - Sede Almagro</option>
+								        <option>22/12/2014 21:00 - Sede Villa Lugano</option>
+								        <option>27/12/2014 22:00 - Sede Flores</option>
+								    </select>
+								</label>                                
+                        	</div>
+                        </div>
                         <div class="control-group">
                             <div class="controls send-btn">
-                                <button type="submit" class="contour-btn contour-btn30 red">Aceptar Jugador</button>
+                                <button type="submit" class="contour-btn contour-btn30 red">Confirmar Sanción</button>
                             </div>
                         </div>
                     </div>
                     <div class="notifications">
                         <div id="contactFormSent" class="formSent alert alert-success">
-                            <strong>Incorporación Exitosa</strong> </div>
+                            <strong>Sanción Aplicada Exitosamente</strong> </div>
                         <div id="contactFormError" class="formError alert alert-error">
                             <strong>Ha ocurrido un error!</strong> Por favor chequeá los campos de abajo y corregí el dato indicado.</div>
                     </div>
                 </form>
             </div>
-        </article>
-            
-            
-            
-            
-            
-            
             
         </article>
 
