@@ -330,8 +330,6 @@ html, body {
 	transition: all 0.2s ease-in-out;*/
 }
 
-
-
 .menua, .menua ul, .menua li, .menua a{
     margin: 0;
     padding: 0;
@@ -406,19 +404,11 @@ html, body {
    
 */ 
 }
-//Método agregado
-.menua a:hover{
-	color: #EB7226;
-	
-/*	-webkit-transition: all 0.2s ease-in-out;
-	-moz-transition: all 0.2s ease-in-out;
-	-o-transition: all 0.2s ease-in-out;
-	transition: all 0.2s ease-in-out;*/
-}
+
 .menua li:first-child a {border-left: none;}
 .menua li:last-child a {border-right: none;}
  
-.menua li:hover > a {color: #0C0;}
+.menua li:hover > a {color: #EB7226;}
  
 .menua ul{
 
@@ -471,8 +461,6 @@ html, body {
     border-bottom: 1px solid #353539;
 }
 .menua ul li:last-child a { border: none; }
-
-
 
 #nav .current a {color: #EB7226 !important;}
 .logo{
