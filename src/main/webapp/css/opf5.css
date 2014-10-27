@@ -141,3 +141,14 @@ width: 300px;
 #tablaNombres{
     width: 100%
 }
+
+/* generarFormaciones */
+
+.datosformularioformaciones{
+    text-align: left;
+    margin-left: 100px;
+}
+
+#npartidos{
+    width: 30px;
+}

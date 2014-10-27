@@ -6,7 +6,7 @@
     
 <head>
         <meta charset="utf-8">
-        <title>OPF5</title>
+        <title>OPF5 - Formaciones</title>
         <link rel="icon" type="img/ico" href="img/loading.gif">
 
         <link rel="stylesheet" href="css/normalize.css">
@@ -18,10 +18,10 @@
         <link rel="stylesheet" href="css/responsive.css">
         <link rel="stylesheet" type="text/css" href="css/vegas/jquery.vegas.css">
         <link rel="stylesheet" href="css/popup/magnific-popup.css">
- 		<link rel="stylesheet" href="js/superslides-0.6.2/dist/stylesheets/superslides.css">
+ 	<link rel="stylesheet" href="js/superslides-0.6.2/dist/stylesheets/superslides.css">
 
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-		<script src="../fast.fonts.net/jsapi/3dca1e78-579f-4502-8da9-3eb91453e0dc.js"></script>
+        <script src="../fast.fonts.net/jsapi/3dca1e78-579f-4502-8da9-3eb91453e0dc.js"></script>
         
         <!-- codigo de seguimiento para Goggle Analitycs -->
 		<script type="text/javascript">
@@ -73,17 +73,81 @@
                         </ul>
                     </li>
                     <li><a href="index.html">Cerrar<br>Sesión</a></li>
-              
             </ul>
-
         </header>
 
         <article id=anchor2 class="content light">
-        	<header class="title one">Generar Formaciones</header>
-            <div class="spacer"></div>
-            
-        </article>
+            <header class="title one">Generar Formaciones</header>
+            <div class="spacer"></div>            
+                        <br>
+            <div class="form_insc  dontHide" align="center">
+            	<form method="post" id="contact" class="peThemeContactForm" action="" >
+                    <div id="personal" class="bay form-horizontal">
+                  
+                        <div class="control-group"><!--partido field-->
+                            <div class="controls">
+                                Partido<br>
+                                <label>
+                                    <select id="partido_Jugado" name="partido_Jugado">
+                                        <option selected>10/11/2014 22:00 - Sede Palermo</option>
+                                        <option>10/12/2014 19:00 - Sede Almagro</option>
+                                        <option>22/12/2014 21:00 - Sede Villa Lugano</option>
+                                        <option>27/12/2014 22:00 - Sede Flores</option>
+                                    </select>
+                                </label>                                
+                            </div>
+                        </div>
+                        Criterios
+                        <br>                        
+                        <div class="control-group">
+                           <div class="controls datosformularioformaciones">
+                               <input type="radio" name="criterios" value="porHandicap">
+                            Por hándicap
+                           </div>
+                        </div>   
+                        <div class="control-group">
+                           <div class="controls datosformularioformaciones">
+                               <input type="radio" name="criterios" value="promUP">
+                            Por promedio último partido
+                           </div>
+                        </div>  
+                        <div class="control-group">
+                           <div class="controls datosformularioformaciones">
+                               <input type="radio" name="criterios" value="promNP">
+                            Por promedio "n" partidos
+                               <input class="cuadranteFormaciones" type="text" id="npartidos" name="npartidos" data-fieldid="0">
+                           </div>
+                        </div>
+                        <div class="control-group">
+                           <div class="controls datosformularioformaciones">
+                               <input type="radio" name="criterios" value="mix">
+                            Mix de criterios
+                           </div>
+                        </div>
+                        División de Equipos
+                        <div class="control-group">
+                           <div class="controls datosformularioformaciones">
+                               <input type="radio" name="busqueda" value="promedioDesde">
+                            Pares - Impares
+                           </div>
+                        </div>
+                        <div class="control-group">
+                           <div class="controls datosformularioformaciones">
+                               <input type="radio" name="busqueda" value="promedioHasta">
+                            Equipo A: 1-4-5-8-9 - Equipo B: 2-3-6-7-10
+                           </div>
+                       </div>                                            
+                        <div class="control-group">
+                            <div class="controls send-btn">
+                                <button type="submit" class="contour-btn contour-btn30 red">Generar Equipo</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </form>
+            </div>
 
+        </article>
 
         <script src="../ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
