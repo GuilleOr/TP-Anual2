@@ -22,6 +22,18 @@
 
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 		<script src="../fast.fonts.net/jsapi/3dca1e78-579f-4502-8da9-3eb91453e0dc.js"></script>
+        		
+		<!-- codigo para time date picker -->
+		<link rel="stylesheet" type="text/css" href="js/DatetimePicker/jquery.datetimepicker.css"/>
+		<script src="js/DatetimePicker/jquery.js"></script>
+		<script src="js/DatetimePicker/jquery.datetimepicker.js"></script>
+		
+		<style type="text/css">
+		.custom-date-style {
+			background-color: red !important;
+		}
+		</style>
+		<!-- Fin codigo time date picker-->
         
         <!-- codigo de seguimiento para Goggle Analitycs -->
 		<script type="text/javascript">
@@ -38,6 +50,10 @@
         
         </script>
         
+        
+        <link type="text/css" rel="stylesheet" href="css/dhtmlgoodies_calendar.css?random=20051112" media="screen">
+		<SCRIPT type="text/javascript" src="js/dhtmlgoodies_calendar.js?random=20060118"></script>
+
     </head>
  
     <body>
@@ -54,36 +70,214 @@
             </div>
             
             <ul class="menua">
-                    <li><a href="administradorHome">Home</a></li>
-                    <li><a href="#">Partidos</a>
-                        <ul>
-                            <li><a href="administradorPartidoNuevo.html">Alta</a></li>
-                            <li><a href="administradorPartidoBaja.html">Baja</a></li>
-                            <li><a href="administradorPartidoModificacion.html">Modificaciones</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="administradorGenerarFormaciones.html">Generar<br>Formaciones</a></li>
-                    <li><a href="administradorConfirmarEquipos.html">Confirmar<br>Equipos</a></li>
-                    <li><a href="administradorSedes.html">Sedes</a></li>
-                    <li><a href="#">Jugadores</a>
-                        <ul>
-                            <li><a href="administradorJugadoresBusqueda.html">Búsqueda</a></li>
-                            <li><a href="administradorJugadoresSolicitudes">Solicitudes</a></li>
-                            <li><a href="administradorJugadoresSanciones">Sanciones</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="index.html">Cerrar<br>Sesión</a></li>
-              
+                <li><a href="#">Home</a></li>
+                <li><a href="">Partidos</a>
+                    <ul>
+                        <li  class="currentMenua"><a href="administradorPartidoNuevo.html">Alta</a></li>
+                        <li><a href="administradorPartidoBaja.html">Baja</a></li>
+                        <li><a href="administradorPartidoModificacion.html">Modificaciones</a></li>
+                    </ul>
+                </li>
+                <li><a href="administradorGenerarFormaciones.html">Generar<br>Formaciones</a></li>
+                <li><a href="administradorConfirmarEquipos.html">Confirmar<br>Equipos</a></li>
+                <li><a href="administradorSedes.html">Sedes</a></li>
+                <li><a href="">Jugadores</a>
+                    <ul>
+                        <li><a href="administradorJugadoresBusqueda.html">Búsqueda</a></li>
+                        <li><a href="administradorJugadoresSolicitudes.html">Solicitudes</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html">Cerrar<br>Sesión</a></li>
             </ul>
-
         </header>
 
+        <!--SECCION Home-->
         <article id=anchor2 class="content light">
-        	<header class="title one">Confirmar Equipos</header>
+        	<header class="title one">Partidos Jugados</header>
             <div class="spacer"></div>
+            <div class="title two"></div>
+
+                <div class="form_insc  dontHide" align="center">
+            	
+            	
+            	<form method="post" id="contact" class="peThemeContactForm" action="" >
+                    <table width="700px" cellpadding="5" border="1" cellspacing="5" class="margenes" >
+                         <tr class="lineaFormulario"><!--fila-->
+                                <th>Nombre Jugador</th><!-- celda-->
+                                <th>Jugador Brusco</th>   
+                                <th> Llegada Tarde</th>
+                                <th>Ausencia</th>
+                        </tr>
+                        <tr class="lineaFormulario"><!--fila-->
+                                <td align="center">Pedro</td><!-- celda-->
+                                <td align="center">
+                                    <input type="radio" id="" name="fechaPartidoNuevo" class="required" value="jugadorBrusco"> 
+                                </td>
+                                <td align="center">
+                                   <input type="radio" id="" name="fechaPartidoNuevo" class="required"value="llegadaTarde" > 
+                                </td>
+                                <td align="center">         
+                                    <input type="radio" id="" name="horaPartidoNuevo" value="ausencia">
+                                </td>
+                        </tr>
+                        <tr class="lineaFormulario"><!--fila-->
+                                <td align="center">Marcelo</td><!-- celda-->
+                                <td align="center">
+                                  <input type="radio" id="" name="fechaPartidoNuevo" class="required" value="jugadorBrusco"> 
+                                </td>
+                                <td align="center">
+                                  <input type="radio" id="" name="fechaPartidoNuevo" class="required"value="llegadaTarde" > 
+                                </td>
+                                <td align="center" >         
+                                   <input type="radio" id="" name="horaPartidoNuevo" value="ausencia">
+                                </td>
+                        </tr>
+                        <tr class="lineaFormulario"><!--fila-->
+                                <td align="center">Lucas</td><!-- celda-->
+                                <td align="center">
+                                    <input type="radio" id="" name="fechaPartidoNuevo" class="required" value="jugadorBrusco"> 
+                                </td>
+                                <td align="center">
+                                   <input type="radio" id="" name="fechaPartidoNuevo" class="required"value="llegadaTarde" > 
+                                </td>
+                                <td align="center">         
+                                    <input type="radio" id="" name="horaPartidoNuevo" value="ausencia">
+                                </td>
+                        </tr>      
+                        <tr class="lineaFormulario"><!--fila-->
+                                <td align="center">Mariano</td><!-- celda-->
+                                <td align="center">
+                                    <input type="radio" id="" name="fechaPartidoNuevo" class="required" value="jugadorBrusco">
+                                </td>
+                                <td align="center">
+                                   <input type="radio" id="" name="fechaPartidoNuevo" class="required"value="llegadaTarde" >
+                                </td>
+                                <td align="center">         
+                                    <input type="radio" id="" name="horaPartidoNuevo" value="ausencia">
+                                </td>
+                        </tr>    
+                        <tr class="lineaFormulario"><!--fila-->
+                                <td align="center">Fabián</td><!-- celda-->
+                                <td align="center">
+                                    <input type="radio" id="" name="fechaPartidoNuevo" class="required" value="jugadorBrusco">
+                                </td>
+                                <td align="center">
+                                   <input type="radio" id="" name="fechaPartidoNuevo" class="required"value="llegadaTarde" >
+                                </td>
+                                <td align="center">         
+                                    <input type="radio" id="" name="horaPartidoNuevo" value="ausencia">
+                                </td>
+                                  <tr class="lineaFormulario"><!--fila-->
+                                <td align="center">Guillermo</td><!-- celda-->
+                                <td align="center">
+                                    <input type="radio" id="" name="fechaPartidoNuevo" class="required" value="jugadorBrusco">
+                                </td>
+                                <td align="center">
+                                   <input type="radio" id="" name="fechaPartidoNuevo" class="required"value="llegadaTarde" >
+                                </td>
+                                <td align="center">         
+                                    <input type="radio" id="" name="horaPartidoNuevo" value="ausencia">
+                                </td>
+                        <tr class="lineaFormulario"><!--fila-->
+                                <td align="center">Cesar</td><!-- celda-->
+                                <td align="center">
+                                    <input type="radio" id="" name="fechaPartidoNuevo" class="required" value="jugadorBrusco">
+                                </td>
+                                <td align="center">
+                                   <input type="radio" id="" name="fechaPartidoNuevo" class="required"value="llegadaTarde" >
+                                </td>
+                                <td align="center">         
+                                    <input type="radio" id="" name="horaPartidoNuevo" value="ausencia">
+                                </td>
+                        </tr>
+                        <tr class="lineaFormulario"><!--fila-->
+                                <td align="center">Claudio</td><!-- celda-->
+                                <td align="center">
+                                    <input type="radio" id="" name="fechaPartidoNuevo" class="required" value="jugadorBrusco">
+                                </td>
+                                <td align="center">
+                                   <input type="radio" id="" name="fechaPartidoNuevo" class="required"value="llegadaTarde" >
+                                </td>
+                                <td align="center">         
+                                    <input type="radio" id="" name="horaPartidoNuevo" value="ausencia">
+                                </td>
+                        </tr>
+                        <tr class="lineaFormulario"><!--fila-->
+                                <td align="center">Alan</td><!-- celda-->
+                                <td align="center">
+                                    <input type="radio" id="" name="fechaPartidoNuevo" class="required" value="jugadorBrusco">
+                                </td>
+                                <td align="center">
+                                   <input type="radio" id="" name="fechaPartidoNuevo" class="required"value="llegadaTarde" >
+                                </td>
+                                <td align="center">         
+                                    <input type="radio" id="" name="horaPartidoNuevo" value="ausencia">
+                                </td>
+                        </tr>
+                        <tr class="lineaFormulario"><!--fila-->
+                               <td align="center">Juan</td><!-- celda-->
+                                <td align="center">
+                                    <input type="radio" id="" name="fechaPartidoNuevo" class="required" value="jugadorBrusco">
+                                </td>
+                                <td align="center">
+                                   <input type="radio" id="" name="fechaPartidoNuevo" class="required"value="llegadaTarde" >
+                                </td>
+                                <td align="center">         
+                                    <input type="radio" id="" name="horaPartidoNuevo" value="ausencia">
+                                </td>
+                        </tr>      
+                    </table>
+                    <div class="controls send-btn">
+                        <button type="submit" class="contour-btn contour-btn30 red">Crear Partido</button>
+                    </div>  
+                    <div class="notifications">
+                        <div id="contactFormSent" class="formSent alert alert-success">
+                            <strong>Se ha creado un partido Nuevo</strong> </div>
+                        <div id="contactFormError" class="formError alert alert-error">
+                            <strong>Ha ocurrido un error!</strong> Por favor chequeá los campos.</div>
+                    </div>
+            </form>
+
+            </div>
             
         </article>
+        <!--FIN SECCION SERVICIOS-->
+        <script>
+		$('#horaPartidoNuevo').datetimepicker({
+			datepicker:false,
+			format:'H:i',
+			step:5
+		});
+		var logic = function( currentDateTime ){
+			if( currentDateTime.getDay()==6 ){
+				this.setOptions({
+					minTime:'11:00'
+				});
+			}else
+				this.setOptions({
+					minTime:'8:00'
+				});
+		};
+		</script>
+        <style>
+        	#campoSede{
+        		margin-bottom: 40px;
+        	}
+        
+        	.white-popup {
+			  position: relative;
+			  background: #FFF;
+			  width: auto;
+			  margin: 0px auto;
+			  max-width: 100%;
+			}
+			.white-popup .image {height: auto;}
+			.white-popup .info {height: auto; padding: 5px 20px 20px 20px;}
+			.white-popup .info .popup-description {color: #555; font-size: 14px;}
 
+			.white-popup img {width: auto; max-width: 100%;}
+			.mfp-content{height: 90%;}
+		</style>
 
         <script src="../ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
@@ -111,5 +305,4 @@
     </body>
 
 </html>
-
 
