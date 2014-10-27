@@ -101,50 +101,50 @@
             	
             	
             	<form method="post" id="contact" class="peThemeContactForm" action="" >
-					<table width="500px" cellpadding="5" cellspacing="5">
-						<tr class="lineaFormulario">
-							<td>Fecha</td>
-							<td>
-							   <input type="text" id="fechaPartidoNuevo" name="fechaPartidoNuevo" value="2014/10/29" readonly >
-	                           <input type="button" value="Cal" onclick="displayCalendar(document.forms[0].fechaPartidoNuevo,'yyyy/mm/dd',this)">
-							</td>
-						</tr>
-						<tr class="lineaFormulario">
-							<td>Hora</td>
-							<td>         
-			                      <input type="text" id="horaPartidoNuevo" name="horaPartidoNuevo">
-							</td>
-						</tr>
-						<tr class="lineaFormulario">
-							<td>Sede (Opcional)</td>
-							<td>
-								<select id="sedePartidoNuevo" name="sedePartidoNuevo">
-							    	<option selected value="0"></option>
-							        <option value="Palermo">Sede Palermo</option>
-							        <option value="Almagro">Sede Almagro</option>
-							        <option value="Lugano">Sede Villa Lugano</option>
-							        <option value="Flores">Sede Flores</option>
-							    </select>
-							</td>
-						</tr>
-						<tr class="lineaFormulario">
-							<td colspan="2">
-								<div class="controls send-btn">
-                         	       <button type="submit" class="contour-btn contour-btn30 red">Crear Partido</button>
-                           		</div>
-							</td>
-						</tr>
-						<tr>
-							<td colspan="2">
-								<div class="notifications">
-			                        <div id="contactFormSent" class="formSent alert alert-success">
-			                            <strong>Se ha creado un partido Nuevo</strong> </div>
-			                        <div id="contactFormError" class="formError alert alert-error">
-			                            <strong>Ha ocurrido un error!</strong> Por favor chequeá los campos.</div>
-			                    </div>
-							</td>
-						</tr>
-					</table>
+                    <table width="500px" cellpadding="5" cellspacing="5">
+                        <tr class="lineaFormulario"><!--fila-->
+                                <td>Fecha</td><!-- celda-->
+                                <td>
+                                   <input type="text" id="fechaPartidoNuevo" name="fechaPartidoNuevo" value="2014/10/29" readonly >
+                                    <input type="button" value="Cal" onclick="displayCalendar(document.forms[0].fechaPartidoNuevo,'yyyy/mm/dd',this)">
+                                </td>
+                        </tr>
+                        <tr class="lineaFormulario">
+                                <td>Hora</td>
+                                <td>         
+                                    <input type="text" id="horaPartidoNuevo" name="horaPartidoNuevo">
+                                </td>
+                        </tr>
+                        <tr class="lineaFormulario">
+                                <td>Sede (Opcional)</td>
+                                <td>
+                                    <select id="sedePartidoNuevo" name="sedePartidoNuevo">
+                                        <option selected value="0"></option>
+                                        <option value="Palermo">Sede Palermo</option>
+                                        <option value="Almagro">Sede Almagro</option>
+                                        <option value="Lugano">Sede Villa Lugano</option>
+                                        <option value="Flores">Sede Flores</option>
+                                    </select>
+                                </td>
+                        </tr>
+                        <tr class="lineaFormulario">
+                            <td colspan="2">
+                                <div class="controls send-btn">
+                                    <button type="submit" class="contour-btn contour-btn30 red">Crear Partido</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <div class="notifications">
+                                    <div id="contactFormSent" class="formSent alert alert-success">
+                                        <strong>Se ha creado un partido Nuevo</strong> </div>
+                                    <div id="contactFormError" class="formError alert alert-error">
+                                        <strong>Ha ocurrido un error!</strong> Por favor chequeá los campos.</div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </form>
 
             </div>
