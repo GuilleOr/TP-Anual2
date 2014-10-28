@@ -158,7 +158,11 @@ Modificado
 }
 
 #npartidos{
-    width: 30px;
+    width: 30px;}
+
+#mixpartidos{
+    width: 30px;}
+
 
 .margenes{
     margin-bottom: 20px;
