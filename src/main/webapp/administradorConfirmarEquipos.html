@@ -56,9 +56,18 @@
             ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
           })();
+          
         
         </script>
         
+        <script>
+        function deshabilita(form)
+            {
+            form.intereses[0].disabled = true;
+            form.intereses[1].disabled = true;
+            form.intereses[2].disabled = true;
+            }
+            </script>
         
         <link type="text/css" rel="stylesheet" href="css/dhtmlgoodies_calendar.css?random=20051112" media="screen">
 		<SCRIPT type="text/javascript" src="js/dhtmlgoodies_calendar.js?random=20060118"></script>
@@ -118,235 +127,137 @@
                             <th>Ausencia</th>
                         </tr>
                         <tr class="lineaFormulario"><!--fila-->
-<<<<<<< HEAD
-                                <td align="center">Pedro</td><!-- celda-->
-                                <td align="center">
-                                   <input type="radio" id="" name="fechaPartidoNuevo"  value="jugadorBrusco1"> 
+                                <form method="POST" name="formulario">
+                                <td align="center">Carlos</td><!-- celda-->
+                                <td align="center"> 
+                                   <input type="radio" id="" name="fechaPartidoNuevo"value="jugadorBrusco1"> 
                                 </td>
                                 <td align="center">
-                                   <input type="radio" id="" name="fechaPartidoNuevo" value="llegadaTarde1" > 
+                                   <input type="radio" id="" name="fechaPartidoNuevo1"value="llegadaTarde1">
                                 </td>
                                 <td align="center">         
-                                    <input type="radio" id="" name="fechaPartidoNuevo" value="ausencia1" >
+                                   <input type="radio" id="" name="fechaPartidoNuevo1"value="ausencia1">
                                 </td>
                         </tr>
                         <tr class="lineaFormulario"><!--fila-->
-                                <td align="center">Marcelo</td><!-- celda-->
+                                <td align="center">Cristina</td><!-- celda-->
                                 <td align="center">
-                                  <input type="radio" id="" name="fechaPartidoNuevo2" value="jugadorBrusco2"> 
+                                  <input type="radio" id="" name="fechaPartidoNuevo21"value="jugadorBrusco2"> 
                                 </td>
                                 <td align="center">
-                                  <input type="radio" id="" name="fechaPartidoNuevo2" value="llegadaTarde2" > 
+                                  <input type="radio" id="" name="fechaPartidoNuev2"value="llegadaTarde2" > 
                                 </td>
                                 <td align="center" >         
-                                   <input type="radio" id="" name="fechaPartidoNuevo2" value="ausencia2" > 
+                                   <input type="radio" id="" name="fechaPartidoNuev2"value="ausencia2" > 
                                 </td>
                         </tr>
                         <tr class="lineaFormulario"><!--fila-->
-                                <td align="center">Lucas</td><!-- celda-->
+                                <td align="center">David</td><!-- celda-->
                                 <td align="center">
-                                    <input type="radio" id="" name="fechaPartidoNuevo3" value="jugadorBrusco3"> 
+                                    <input type="radio" id="" name="fechaPartidoNuevo31" value="jugadorBrusco3"> 
                                 </td>
                                 <td align="center">
-                                   <input type="radio" id="" name="fechaPartidoNuevo3" value="llegadaTarde3"> 
+                                   <input type="radio" id="" name="fechaPartidoNuev3" value="llegadaTarde3"> 
                                 </td>
                                 <td align="center">         
-                                    <input type="radio" id="" name="fechaPartidoNuevo3" value="ausente3">
+                                    <input type="radio" id="" name="fechaPartidoNuev3" value="ausente3">
                                 </td>
                         </tr>      
                         <tr class="lineaFormulario"><!--fila-->
-                                <td align="center">Mariano</td><!-- celda-->
+                                <td align="center">Diego</td><!-- celda-->
                                 <td align="center">
-                                   <input type="radio" id="" name="fechaPartidoNuevo4" value="juegoBrusco4">
+                                   <input type="radio" id="" name="fechaPartidoNuevo41" value="juegoBrusco4">
                                 </td>
                                 <td align="center">
-                                   <input type="radio" id="" name="fechaPartidoNuevo4" value="llegadaTarde4">
+                                   <input type="radio" id="" name="fechaPartidoNuev4" value="llegadaTarde4">
                                 </td>
                                 <td align="center">         
-                                   <input type="radio" id="" name="fechaPartidoNuevo4" value="ausente4">
+                                   <input type="radio" id="" name="fechaPartidoNuev4" value="ausente4">
                                 </td>
                         </tr>    
                         <tr class="lineaFormulario"><!--fila-->
-                                <td align="center">Fabián</td><!-- celda-->
+                                <td align="center">Felipe</td><!-- celda-->
                                 <td align="center">
-                                   <input type="radio" id="" name="fechaPartidoNuevo5" value="juegoBrusco5">
+                                   <input type="radio" id="" name="fechaPartidoNuevo51" value="juegoBrusco5">
                                 </td>
                                 <td align="center">
-                                   <input type="radio" id="" name="fechaPartidoNuevo5" value="llegadaTarde5">
+                                   <input type="radio" id="" name="fechaPartidoNuev5" value="llegadaTarde5">
                                 </td>
                                 <td align="center">         
-                                   <input type="radio" id="" name="fechaPartidoNuevo5" value="ausencia5">
+                                   <input type="radio" id="" name="fechaPartidoNuev5" value="ausencia5">
                                 </td>
                                   <tr class="lineaFormulario"><!--fila-->
-                                <td align="center">Guillermo</td><!-- celda-->
+                                <td align="center">Juan</td><!-- celda-->
                                 <td align="center">
-                                    <input type="radio" id="" name="fechaPartidoNuevo6" value="jugadorBrusco6">
+                                    <input type="radio" id="" name="fechaPartidoNuevo61" value="jugadorBrusco6">
                                 </td>
                                 <td align="center">
-                                   <input type="radio" id="" name="fechaPartidoNuevo6" value="llegadaTarde6" >
+                                   <input type="radio" id="" name="fechaPartidoNuev6" value="llegadaTarde6" >
                                 </td>
                                 <td align="center">         
-                                    <input type="radio" id="" name="fechaPartidoNuevo6" value="ausencia6">
+                                    <input type="radio" id="" name="fechaPartidoNuev6" value="ausencia6">
                                 </td>
                         <tr class="lineaFormulario"><!--fila-->
-                                <td align="center">Cesar</td><!-- celda-->
+                                <td align="center">Leo</td><!-- celda-->
                                 <td align="center">
-                                    <input type="radio" id="" name="fechaPartidoNuevo7"  value="jugadorBrusco7">
+                                    <input type="radio" id="" name="fechaPartidoNuevo71"  value="jugadorBrusco7">
                                 </td>
                                 <td align="center">
                                    <input type="radio" id="" name="fechaPartidoNuevo7" value="llegadaTarde7" >
                                 </td>
                                 <td align="center">         
                                     <input type="radio" id="" name="fechaPartidoNuevo7" value="ausencia7">
-=======
-                            <td align="center">Pedro</td><!-- celda-->
+
+                                </td>
+                        </tr>
+                        <tr class="lineaFormulario"><!--fila-->
+                            <td align="center">Martin</td><!-- celda-->
                             <td align="center">
-                                <input type="radio" id="comportamientoJugador11" name="comportamientoJugador11" class="required" value="jugadorBrusco"> 
+                                <input type="radio" id="" name="comportamientoJugador21"value="jugadorBrusco8"> 
                             </td>
                             <td align="center">
-                               <input type="radio" id="comportamientoJugador12" name="comportamientoJugador12" class="required"value="llegadaTarde" > 
+                               <input type="radio" id="" name="comportamientoJugador23" value="llegadaTarde8"> 
                             </td>
                             <td align="center">         
-                                <input type="radio" id="comportamientoJugador13" name="comportamientoJugador13" value="ausencia">
+                                <input type="radio" id="" name="comportamientoJugador23" value="ausencia8">
                             </td>
                         </tr>
                         <tr class="lineaFormulario"><!--fila-->
-                            <td align="center">Marcelo</td><!-- celda-->
+                            <td align="center">Matias</td><!-- celda-->
                             <td align="center">
-                                <input type="radio" id="comportamientoJugador21" name="comportamientoJugador21" class="required" value="jugadorBrusco"> 
+                                <input type="radio" id="" name="comportamientoJugador27" value="juegoBrusco9"> 
                             </td>
                             <td align="center">
-                               <input type="radio" id="comportamientoJugador22" name="comportamientoJugador22" class="required"value="llegadaTarde" > 
+                               <input type="radio" id="" name="comportamientoJugador32" value="llegadaTarde9"> 
                             </td>
                             <td align="center">         
-                                <input type="radio" id="comportamientoJugador23" name="comportamientoJugador23" value="ausencia">
-                            </td>
-                        </tr>
-                        <tr class="lineaFormulario"><!--fila-->
-                            <td align="center">Lucas</td><!-- celda-->
-                            <td align="center">
-                                <input type="radio" id="comportamientoJugador31" name="comportamientoJugador31" class="required" value="jugadorBrusco"> 
-                            </td>
-                            <td align="center">
-                               <input type="radio" id="comportamientoJugador32" name="comportamientoJugador32" class="required"value="llegadaTarde" > 
-                            </td>
-                            <td align="center">         
-                                <input type="radio" id="comportamientoJugador33" name="comportamientoJugador33" value="ausencia">
+                                <input type="radio" id="" name="comportamientoJugador32" value="ausencia9">
                             </td>
                         </tr>      
-                        <tr class="lineaFormulario"><!--fila-->
-                            <td align="center">Mariano</td><!-- celda-->
+                         <tr class="lineaFormulario"><!--fila-->
+                            <td align="center">Pablo</td><!-- celda-->
                             <td align="center">
-                                <input type="radio" id="comportamientoJugador41" name="comportamientoJugador41" class="required" value="jugadorBrusco">
+                                <input type="radio" id="comportamientoJugador33" name="comportamientoJugador23" value="juegoBrusco9"> 
                             </td>
                             <td align="center">
-                               <input type="radio" id="comportamientoJugador42" name="comportamientoJugador42" class="required"value="llegadaTarde" >
+                               <input type="radio" id="comportamientoJugador42" name="comportamientoJugador33" value="llegadaTarde9" > 
                             </td>
                             <td align="center">         
-                                <input type="radio" id="comportamientoJugador43" name="comportamientoJugador43" value="ausencia">
+                                <input type="radio" id="comportamientoJugador42" name="comportamientoJugador33" value="ausencia9">
                             </td>
                         </tr>    
                         <tr class="lineaFormulario"><!--fila-->
-                            <td align="center">Fabián</td><!-- celda-->
+                            <td align="center">Enrique</td><!-- celda-->
                             <td align="center">
-                                <input type="radio" id="comportamientoJugador51" name="comportamientoJugador51" class="required" value="jugadorBrusco">
+                                <input type="radio" id="comportamientoJugador39" name="comportamientoJugador24" value="juegoBrusco9"> 
                             </td>
                             <td align="center">
-                               <input type="radio" id="comportamientoJugador52" name="comportamientoJugador52" class="required"value="llegadaTarde" >
+                               <input type="radio" id="comportamientoJugador29" name="comportamientoJugador34" value="llegadaTarde9" > 
                             </td>
                             <td align="center">         
-                                <input type="radio" id="comportamientoJugador53" name="comportamientoJugador53" value="ausencia">
+                                <input type="radio" id="comportamientoJugador37" name="comportamientoJugador34" value="ausencia9">
                             </td>
-                        <tr class="lineaFormulario"><!--fila-->
-                            <td align="center">Guillermo</td><!-- celda-->
-                            <td align="center">
-                                <input type="radio" id="comportamientoJugador61" name="comportamientoJugador61" class="required" value="jugadorBrusco">
-                            </td>
-                            <td align="center">
-                               <input type="radio" id="comportamientoJugador62" name="comportamientoJugador62" class="required"value="llegadaTarde" >
-                            </td>
-                            <td align="center">         
-                                <input type="radio" id="comportamientoJugador63" name="comportamientoJugador63" value="ausencia">
-                            </td>
-                        <tr class="lineaFormulario"><!--fila-->
-                                <td align="center">Cesar</td><!-- celda-->
-                                <td align="center">
-                                    <input type="radio" id="comportamientoJugador71" name="comportamientoJugador71" class="required" value="jugadorBrusco">
-                                </td>
-                                <td align="center">
-                                   <input type="radio" id="comportamientoJugador72" name="comportamientoJugador72" class="required"value="llegadaTarde" >
-                                </td>
-                                <td align="center">         
-                                    <input type="radio" id="comportamientoJugador73" name="comportamientoJugador73" value="ausencia">
->>>>>>> origin/master
-                                </td>
-                        </tr>
-                        <tr class="lineaFormulario"><!--fila-->
-                                <td align="center">Claudio</td><!-- celda-->
-                                <td align="center">
-<<<<<<< HEAD
-                                    <input type="radio" id="" name="fechaPartidoNuevo8" value="jugadorBrusco8">
-                                </td>
-                                <td align="center">
-                                   <input type="radio" id="" name="fechaPartidoNuevo8" value="llegadaTarde8" >
-                                </td>
-                                <td align="center">         
-                                    <input type="radio" id="" name="fechaPartidoNuevo8" value="ausencia8">
-=======
-                                    <input type="radio" id="comportamientoJugador81" name="comportamientoJugador81" class="required" value="jugadorBrusco">
-                                </td>
-                                <td align="center">
-                                   <input type="radio" id="comportamientoJugador82" name="comportamientoJugador82" class="required"value="llegadaTarde" >
-                                </td>
-                                <td align="center">         
-                                    <input type="radio" id="comportamientoJugador83" name="comportamientoJugador83" value="ausencia">
->>>>>>> origin/master
-                                </td>
-                        </tr>
-                        <tr class="lineaFormulario"><!--fila-->
-                                <td align="center">Alan</td><!-- celda-->
-                                <td align="center">
-<<<<<<< HEAD
-                                    <input type="radio" id="" name="fechaPartidoNuevo9"  value="jugadorBrusco9">
-                                </td>
-                                <td align="center">
-                                   <input type="radio" id="" name="fechaPartidoNuevo9" value="llegadaTarde9" >
-                                </td>
-                                <td align="center">         
-                                   <input type="radio" id="" name="fechaPartidoNuevo9" value="ausencia9">
-=======
-                                    <input type="radio" id="comportamientoJugador91" name="comportamientoJugador91" class="required" value="jugadorBrusco">
-                                </td>
-                                <td align="center">
-                                   <input type="radio" id="comportamientoJugador92" name="comportamientoJugador92" class="required"value="llegadaTarde" >
-                                </td>
-                                <td align="center">         
-                                    <input type="radio" id="comportamientoJugador93" name="comportamientoJugador93" value="ausencia">
->>>>>>> origin/master
-                                </td>
-                        </tr>
-                        <tr class="lineaFormulario"><!--fila-->
-                               <td align="center">Juan</td><!-- celda-->
-                                <td align="center">
-<<<<<<< HEAD
-                                    <input type="radio" id="" name="fechaPartidoNuevo10"  value="jugadorBrusco10">
-                                </td>
-                                <td align="center">
-                                   <input type="radio" id="" name="fechaPartidoNuevo10" value="llegadaTarde10" >
-                                </td>
-                                <td align="center">         
-                                    <input type="radio" id="" name="fechaPartidoNuevo10" value="ausencia10" >
-=======
-                                    <input type="radio" id="comportamientoJugador101" name="comportamientoJugador101" class="required" value="jugadorBrusco">
-                                </td>
-                                <td align="center">
-                                   <input type="radio" id="comportamientoJugador102" name="comportamientoJugador102" class="required"value="llegadaTarde" >
-                                </td>
-                                <td align="center">         
-                                    <input type="radio" id="comportamientoJugador103" name="comportamientoJugador103" value="ausencia">
->>>>>>> origin/master
-                                </td>
-                        </tr>      
+                        </tr> 
                     </table>
                     <div id="divBotonConfirmar" class="controls send-btn" width="700px">
                         <button type="submit" class="contour-btn contour-btn30 red" width="700px!important">Guardar Cambios</button>
