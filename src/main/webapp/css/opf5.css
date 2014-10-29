@@ -87,7 +87,10 @@ label:before {
     margin-left: 10px;
 }
 #mail{
-width: 300px;    
+	width: 295px;    
+}
+#celular{
+	width:194px;
 }
 .cuadrante1{
     margin-left: 10px;
@@ -102,27 +105,28 @@ width: 300px;
     width: 275px;
 }
 #xnombre {
-    width: 201px; 
+    width: 225px; 
 }
 
 #xnacimiento {
-    width: 100px; 
+    width: 122px; 
 }
 
 #xhdesde{
-    width: 278px;
+    width: 303px;
 }
 
 #xhhasta{
-    width: 281px;
+    width: 307px;
 }
 #xpdesde{
-    width: 138px;
+    width: 160px;
 }
 
 #xphasta{
-    width: 140px;
+    width: 164px;
 }
+/*administradorPartidoNuevo*/
 #horaPartidoNuevo{
 	width: 98%;
 }
@@ -130,7 +134,15 @@ width: 300px;
 #fechaPartidoNuevo{
 	width:84%;
 }
+/*administradorPartidoNuevo*/
+#horaPartidoModificado{
+	width: 98%;
+}
 
+#fechaPartidoModificado{
+	width: 98%;
+}
+Modificado
 /* administradorJugadorNuevo*/
 .datosformulariosbusqueda2{
     margin-right: 290px; 
@@ -141,6 +153,20 @@ width: 300px;
 #tablaNombres{
     width: 100%
 }
+
+/* generarFormaciones */
+.datosformularioformaciones{
+    text-align: left;
+    margin-left: 100px;
+}
+
+#npartidos{
+    width: 30px;}
+
+#mixpartidos{
+    width: 30px;}
+
+
 .margenes{
     margin-bottom: 20px;
 }
