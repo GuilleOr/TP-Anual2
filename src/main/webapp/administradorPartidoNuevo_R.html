@@ -69,54 +69,33 @@
 
         <!--SECCION Home-->
         <article id=anchor2 class="content light">
-        	<header class="title one">Crear un Partido Nuevo</header>
+        	<header class="title one">Resultado del Alta de partido</header>
             <div class="spacer"></div>
-            <div class="title two">Complete los datos del nuevo partido</div>
-                <div class="form_insc  dontHide" align="center">
-            	<form method="post" action="administradorPartidoNuevo_R.html">
-	                    <table width="500px" cellspacing='0'>
-	                        <tr class="lineaFormulario"><!--fila-->
-	                                <td>Fecha</td><!-- celda-->
-	                                <td>
-	                                   <input type="text" id="fechaPartidoNuevo" name="fechaPartidoNuevo" value="2014/10/29" readonly >
-	                                   <input type="button" value="Cal" onclick="displayCalendar(document.forms[0].fechaPartidoNuevo,'yyyy/mm/dd',this)">
-	                                </td>
-	                        </tr>
-	                        <tr class="lineaFormulario">
-	                                <td>Hora</td>
-	                                <td>         
-	                                    <input type="text" id="horaPartidoNuevo" name="horaPartidoNuevo">
-	                                </td>
-	                        </tr>
-	                        <tr class="lineaFormulario">
-	                                <td>Sede (Opcional)</td>
-	                                <td>
-	                                    <select id="sedePartidoNuevo" name="sedePartidoNuevo">
-	                                        <option selected value="0"></option>
-	                                        <option value="Palermo">Sede Palermo</option>
-	                                        <option value="Almagro">Sede Almagro</option>
-	                                        <option value="Lugano">Sede Villa Lugano</option>
-	                                        <option value="Flores">Sede Flores</option>
-	                                    </select>
-	                                </td>
-	                        </tr>
-	                        <tr class="lineaFormulario">
-	                            <td colspan="2">
-	                                <div class="controls send-btn">
-	                                	<input type="submit" value="Crear Partido" class="contour-btn contour-btn30 red">
-	                                </div>
-	                            </td>
-	                        </tr>
-                           <tr class="lineaFormulario">
-	                            <td colspan="2">
-	                                <div class="botonOPF1" align="center"><a href="administradorPanelPartidos.html">Volver al panel de partidos</a></div>
-	                            </td>
-	                        </tr>                     
-	                    </table>
-	                </form>
 
-            </div>
-            
+            <div align="center">
+	            	<form action="" method="get" id="" class="" >
+	            		<table width="600px" border="1" align="center" class="tablaOPF2">
+	            			<tr>
+	            				<th colspan="2">Se ha creado el siguiente partido</th>
+	            			</tr>
+	            			<tr>
+	            				<td width="40%" class="negrita">Fecha</td>
+	            				<td width="60%">10/12/14</td>
+	            			</tr>
+	            			<tr>
+	            				<td class="negrita">Hora</td>
+	            				<td>18:00</td>
+	            			</tr>
+	            			<tr>
+	            				<td class="negrita">Sede</td>
+	            				<td>Sede Caballito</td>
+	            			</tr>
+	            			
+	            		</table>
+	                </form>
+                    <div class="botonOPF1" align="center"><a href="administradorPanelPartidos.html">Volver al panel de partidos</a></div>
+
+               </div>
         </article>
         <!--FIN SECCION SERVICIOS-->
         <script>
