@@ -20,7 +20,7 @@
         <link rel="stylesheet" href="css/responsive.css">
         <link rel="stylesheet" type="text/css" href="css/vegas/jquery.vegas.css">
         <link rel="stylesheet" href="css/popup/magnific-popup.css">
- 	<link rel="stylesheet" href="js/superslides-0.6.2/dist/stylesheets/superslides.css">
+ 		<link rel="stylesheet" href="js/superslides-0.6.2/dist/stylesheets/superslides.css">
 
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
         <script src="../fast.fonts.net/jsapi/3dca1e78-579f-4502-8da9-3eb91453e0dc.js"></script>
@@ -73,14 +73,6 @@
         </style>
 
         
-        <script type="text/javascript">
-           function hacer_click()
-	    {
-	        alert("Equipo Confirmado");
-	    }
-        </script> 
-        
-        
     </head>
  
     <body>
@@ -98,9 +90,9 @@
             
             <ul class="menua">
                     <li><a href="administradorHome.html">Home</a></li>
-                    <li class="currentMenua"><a href="administradorPanelPartidos.html">Partidos</a></li>
+                    <li><a href="administradorPanelPartidos.html">Partidos</a></li>
                     <li class="currentMenua"><a href="administradorGenerarFormaciones.html">Generar<br>Formaciones</a></li>
-                    <li><a href="administradorConfirmarEquipos.html">Partidos<br>Jugados</a></li>
+               		<li><a href="administradorPartidosJugados.html">Partidos<br>Jugados</a></li>
                     <li><a href="administradorSedes.html">Sedes</a></li>
                     <li><a>Jugadores</a>
                         <ul>
@@ -138,7 +130,7 @@
                                 </label>                                
                             </div>
                         </div>
-                        Criterios
+                        <b>Criterios</b>
                         <br>                        
                         <div class="control-group">
                            <div class="controls datosformularioformaciones">
@@ -166,7 +158,7 @@
                                <input class="cuadranteFormaciones" type="text" id="mixpartidos" name="mixpartidos" data-fieldid="0">
                            </div>
                         </div>
-                        División de Equipos
+                        <b>División de Equipos</b>
                         <div class="control-group">
                            <div class="controls datosformularioformaciones">
                                <input type="radio" name="busqueda" value="promedioDesde">
@@ -244,22 +236,19 @@
                                     <br>
                                     <div align="center">
                                         <form name="confirmacion" action="administradorGenerarFormaciones.html" target="_blank">
-                                            <input type=button onclick="hacer_click()" value="Confirmar Equipos"> 
-                                            
-<!--                                            <input type="submit" value="Confirmar Equipos"> -->
+                                           <input type="button" onclick="foo1()" value="Confirmar Equipos"> 
+            		                       <script type="text/javascript" charset="utf-8">
+				                       		    function foo1() {
+											        alert("Se han guardado las formaciones del partido.");
+											        window.location="administradorGenerarFormaciones.html";
+											        return true;
+											    }
+										   </script>
                                         </form>
-                                    </div>                                     
+                                    </div>                      
                                 </div>
                             </div>
                         </div>
-
-<!--                        
-                        <div class="control-group">
-                            <div class="controls send-btn">
-                                <button type="submit" class="contour-btn contour-btn30 red">Generar Equipo</button>
-                            </div>
-                        </div>
--->                        
                     </div>
                 </form>
             </div>

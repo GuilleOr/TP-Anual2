@@ -22,42 +22,7 @@
 
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 		<script src="../fast.fonts.net/jsapi/3dca1e78-579f-4502-8da9-3eb91453e0dc.js"></script>
-        		
-		<!-- codigo para time date picker -->
-		<link rel="stylesheet" type="text/css" href="js/DatetimePicker/jquery.datetimepicker.css"/>
-		<script src="js/DatetimePicker/jquery.js"></script>
-		<script src="js/DatetimePicker/jquery.datetimepicker.js"></script>
-		
-		<style type="text/css">
-		.custom-date-style {
-			background-color: red !important;
-		}
-		
-		.divConfirmarPartido{
-			width: auto;
-		}
-		
-		#divBotonConfirmar{
-			margin-top:10px;
-			width: 700px!important;
-		}
-		</style>
-		<!-- Fin codigo time date picker-->
-        
-        <!-- codigo de seguimiento para Goggle Analitycs -->
-		<script type="text/javascript">
-        
-          var _gaq = _gaq || [];
-          _gaq.push(['_setAccount', 'UA-24553021-1']);
-          _gaq.push(['_trackPageview']);
-        
-          (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-          })();
-        
-        </script>
+
         
         
         <link type="text/css" rel="stylesheet" href="css/dhtmlgoodies_calendar.css?random=20051112" media="screen">
@@ -77,14 +42,11 @@
             <div class="logo">
                 <img src="img/logos/logoSistema.jpg" width="70" alt='logoOPF5'>
             </div>
-            
             <ul class="menua">
                 <li><a href="administradorHome.html">Home</a></li>
-                <li><a>Partidos</a>
-                </li>
                 <li><a href="administradorPanelPartidos.html">Partidos</a></li>
                 <li><a href="administradorGenerarFormaciones.html">Generar<br>Formaciones</a></li>
-                <li class="currentMenua"><a href="administradorConfirmarEquipos.html">Partidos<br>Jugados</a></li>
+                <li class="currentMenua"><a href="administradorPartidosJugados.html">Partidos<br>Jugados</a></li>
                 <li><a href="administradorSedes.html">Sedes</a></li>
                 <li><a>Jugadores</a>
                     <ul>
@@ -100,11 +62,9 @@
         <article id=anchor2 class="content light">
         	<header class="title one">Partidos Jugados</header>
             <div class="spacer"></div>
-            <div class="title two"></div>
-
+            <div class="title two">Jugadores del partido</div>
                 <div class="divConfirmarPartido  dontHide" align="center">
-            	
-            	
+ 
             	<form method="post" id="formConfirmarPartido" class="peThemeContactForm" action="" >
                     <table width="700px" cellpadding="5" border="1" cellspacing="5" class="margenes" >
                          <tr class="lineaFormulario"><!--fila-->
@@ -220,15 +180,17 @@
                         
                         
                     </table>
-                    <div id="divBotonConfirmar" class="controls send-btn" width="700px">
-                        <button type="submit" class="contour-btn contour-btn30 red" width="700px!important">Guardar Cambios</button>
-                    </div>  
-                    <div class="notifications">
-                        <div id="contactFormSent" class="formSent alert alert-success">
-                            <strong>Se han guardado los cambios</strong> </div>
-                        <div id="contactFormError" class="formError alert alert-error">
-                            <strong>Ha ocurrido un error!</strong> Por favor chequeá los campos.</div>
+                    <div id="divBotonConfirmar" class="controls send-btn" style="width: 700px">
+                        <button type="button" class="contour-btn contour-btn30 red" width="700px!important" onclick="foo1()">Guardar Cambios</button>
+                    	<script>
+                		    function foo1() {
+						        alert("Se han guardado las datos del partido seleccionado");
+						        window.location="administradorPartidosJugados.html";
+						        return true;
+						    }
+                    	</script>                    	
                     </div>
+                    <br>
             </form>
 
             </div>

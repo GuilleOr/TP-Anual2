@@ -6,7 +6,7 @@
     
 <head>
         <meta charset="utf-8">
-        <title>OPF5</title>
+        <title>OPF5 - Calificaciones</title>
         <link rel="icon" type="img/ico" href="img/loading.gif">
 
         <link rel="stylesheet" href="css/normalize.css">
@@ -37,21 +37,6 @@
           })();
         
         </script>
-        
-        <script>        	
-			$(document).ready(function() {
-			    $('.fieldcontent').not('.info').hide();
-			    $('#tipo_Inscripcion').change(function() {
-			        
-			        if ($(this).val() === 'condicional') {
-			            $("textarea[id='condicion_Inscripcion']").prop('disabled',true);
-			        }else{
-			            $("textarea[id='condicion_Inscripcion']").prop('disabled',false);
-			        };
-			    }); 
-			});
-        </script>
-
     </head>
  
     <body>
@@ -60,15 +45,6 @@
               <img src="img/loading.gif" alt='loading'>
             </div>
         </div>
-
-        <!--<section id="home" class="clear">-->
-            <!--<div id="anchor1">--><!--<div>
-                <ul class="slider-controls">
-                    <li><a id="vegas-next" class="s-next" href="#"></a></li>
-                    <li><a id="vegas-prev" class="s-prev" href="#"></a></li>
-                </ul>
-            </div>
-        </section>-->
         <div id="logx"></div>
         <header class="header">
             <div class="logo">
@@ -93,7 +69,6 @@
         	<header class="title one">Calificaciones</header>
             <div class="spacer"></div>
             <div class="title two">Elija un partido</div>
-            
             <div id="div1">
             	<form action="jugadorCalificaciones2.html" method="get" id="" class="peThemeContactForm" >
                     <div id="personal" class="bay form-horizontal">
@@ -117,9 +92,6 @@
                     </div>
                 </form>
             </div>
-            
-            
-            
         </article>
         <!--FIN SECCION SERVICIOS-->
 
