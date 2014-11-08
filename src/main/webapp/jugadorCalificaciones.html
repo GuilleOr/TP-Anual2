@@ -92,9 +92,10 @@
         <article id=anchor2 class="content light">
         	<header class="title one">Calificaciones</header>
             <div class="spacer"></div>
-            <div class="title two">Elija un partido jugado y califique a sus jugadores!</div>
-            <div class="form_insc  dontHide" align="center">
-            	<form method="post" id="contact" class="peThemeContactForm" action="" >
+            <div class="title two">Elija un partido</div>
+            
+            <div id="div1">
+            	<form action="jugadorCalificaciones2.html" method="get" id="" class="peThemeContactForm" >
                     <div id="personal" class="bay form-horizontal">
                         <div class="control-group"><!--partido field-->
                             <div class="controls">
@@ -108,86 +109,19 @@
                                     </select>
                                 </label>                                
                             </div>
-                        </div>
-                        <div class="control-group"><!--name field-->
-                            <div class="controls">
-                            	Jugador<br>
-                                <label>
-                                    <select id="jugador" name="jugador" onchange="enableElements();">
-                                        <option value="jugador1">Ariel</option>
-                                        <option value="jugador2">Juan</option>
-                                        <option value="jugador3">Jose</option>
-                                        <option value="jugador4">Gustavo</option>
-                                        <option value="jugador5">Federico</option>
-                                        <option value="jugador6">Guillermo</option>
-                                        <option value="jugador7">Alan</option>
-                                        <option value="jugador8">Tomas</option>
-                                        <option value="jugador9">Sergio</option>
-                                    </select>
-                                </label>                                
-                            </div>
-                        </div>                       
-    
-                        <div class="control-group"><!--partido field-->
-                            <div class="controls">
-                            	Puntaje<br>
-                                <label>
-                                    <select id="jugador_calificacion" name="jugador_calificacion">
-                                        <option selected>0</option>
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                        <option>6</option>
-                                        <option>7</option>
-                                        <option>8</option>
-                                        <option>9</option>
-                                        <option>10</option>
-                                    </select>
-                                </label>                                
-                            </div>
-                        </div>
-    
-                        <div><!--message field -->
-                            <div class="controls">
-                            	Comentarios
-                                <textarea id="condicion_Inscripcion" name="condicion_Inscripcion" rows="12" class="required span9" data-fieldid="2" style="background-color:#fafafa "></textarea>
-                            </div>
-                        </div>       
-                        <div class="control-group">
-                            <div class="controls send-btn">
-                                <button type="submit" class="contour-btn contour-btn30 red">Guardar calificación</button>
-                            </div>
-                        </div>
-                    
-                    </div>
-                    <div class="notifications">
-                        <div id="contactFormSent" class="formSent alert alert-success">
-                            <strong>Calificación Exitosa</strong> </div>
-                        <div id="contactFormError" class="formError alert alert-error">
-                            <strong>Ha ocurrido un error!</strong> Por favor chequeá los campos de abajo y corregí el dato indicado.</div>
+                        </div>  
+                        <br>
+	                    <div class="submitOPF1" align="center">
+                        	<input type="submit" value="Calificar Jugadores del partido seleccionado" class="contour-btn contour-btn30 red">
+	                    </div>
                     </div>
                 </form>
             </div>
+            
+            
+            
         </article>
         <!--FIN SECCION SERVICIOS-->
-
-        <style>
-        	.white-popup {
-			  position: relative;
-			  background: #FFF;
-			  width: auto;
-			  margin: 0px auto;
-			  max-width: 100%;
-			}
-			.white-popup .image {height: auto;}
-			.white-popup .info {height: auto; padding: 5px 20px 20px 20px;}
-			.white-popup .info .popup-description {color: #555; font-size: 14px;}
-
-			.white-popup img {width: auto; max-width: 100%;}
-			.mfp-content{height: 90%;}
-		</style>
 
         <script src="../ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
