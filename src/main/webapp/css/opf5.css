@@ -465,19 +465,22 @@ Modificado
 	font-weight: bold;
 }
 
+
+
 /*TABLA INFRACCIONES*/
 #tablaInfraccion{
 	width: 600px;
 }
 
-#tablaInfraccion th{
-	padding:10px;
-	border-top:1px solid #fafafa;
+.headerInfraccion{
+	padding:10px!important;
+	border-top:1px solid #fafafa!important;
 	border-bottom:1px solid #e0e0e0;
 
 	background-color: black!important;
-	
+	background
 	color: white;
+	
 }
 
 
