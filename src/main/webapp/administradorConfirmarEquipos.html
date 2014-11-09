@@ -82,6 +82,7 @@
                 <li><a href="administradorHome.html">Home</a></li>
                 <li><a>Partidos</a>
                 </li>
+                <li><a href="administradorPanelPartidos.html">Partidos</a></li>
                 <li><a href="administradorGenerarFormaciones.html">Generar<br>Formaciones</a></li>
                 <li class="currentMenua"><a href="administradorConfirmarEquipos.html">Partidos<br>Jugados</a></li>
                 <li><a href="administradorSedes.html">Sedes</a></li>
@@ -107,130 +108,117 @@
             	<form method="post" id="formConfirmarPartido" class="peThemeContactForm" action="" >
                     <table width="700px" cellpadding="5" border="1" cellspacing="5" class="margenes" >
                          <tr class="lineaFormulario"><!--fila-->
-                            <th>Nombre Jugador</th><!-- celda-->
-                            <th>Jugador Brusco</th>   
-                            <th>Llegada Tarde</th>
-                            <th>Ausencia</th>
+                            <th>Nombre Jugador</td><!-- celda-->
+                            <th colspan="2">Presente con sancion</th>   
+                            <th>Ausente</th>
+                            <th>Sin sanciones</th>
                         </tr>
-                        <tr class="lineaFormulario"><!--fila-->
-                                <td align="center">Cesar</td><!-- celda-->
-                            <td align="center">
+                        <!--Linea jugador-->
+                        <tr align="center"class="lineaFormulario"><!--fila-->
+                                <td rowspan="2">Cesar</td><!-- celda-->
+                            <td colspan="2" align="center">
                                 <input type="radio" id="comportamientoJugador11" name="comportamientoJugador11" class="required" value="jugadorBrusco"> 
                             </td>
-                            <td align="center">
+                            <td rowspan="2" align="center">
                                <input type="radio" id="comportamientoJugador12" name="comportamientoJugador12" class="required"value="llegadaTarde" > 
                             </td>
-                            <td align="center">         
+                            <td rowspan="2" align="center">         
                                 <input type="radio" id="comportamientoJugador13" name="comportamientoJugador13" value="ausencia">
                             </td>
                         </tr>
                         <tr class="lineaFormulario"><!--fila-->
-                            <td align="center">Marcelo</td><!-- celda-->
                             <td align="center">
                                 <input type="radio" id="comportamientoJugador21" name="comportamientoJugador21" class="required" value="jugadorBrusco"> 
                             </td>
-                            <td align="center">
+                            <td  align="center">
                                <input type="radio" id="comportamientoJugador22" name="comportamientoJugador22" class="required"value="llegadaTarde" > 
                             </td>
-                            <td align="center">         
-                                <input type="radio" id="comportamientoJugador23" name="comportamientoJugador23" value="ausencia">
-                            </td>
                         </tr>
-                        <tr class="lineaFormulario"><!--fila-->
-                            <td align="center">Lucas</td><!-- celda-->
-                            <td align="center">
-                                <input type="radio" id="comportamientoJugador31" name="comportamientoJugador31" class="required" value="jugadorBrusco"> 
-                            </td>
-                            <td align="center">
-                               <input type="radio" id="comportamientoJugador32" name="comportamientoJugador32" class="required"value="llegadaTarde" > 
-                            </td>
-                            <td align="center">         
-                                <input type="radio" id="comportamientoJugador33" name="comportamientoJugador33" value="ausencia">
-                            </td>
-                        </tr>      
-                        <tr class="lineaFormulario"><!--fila-->
-                            <td align="center">Mariano</td><!-- celda-->
-                            <td align="center">
-                                <input type="radio" id="comportamientoJugador41" name="comportamientoJugador41" class="required" value="jugadorBrusco">
-                            </td>
-                            <td align="center">
-                               <input type="radio" id="comportamientoJugador42" name="comportamientoJugador42" class="required"value="llegadaTarde" >
-                            </td>
-                            <td align="center">         
-                                <input type="radio" id="comportamientoJugador43" name="comportamientoJugador43" value="ausencia">
-                            </td>
-                        </tr>    
-                        <tr class="lineaFormulario"><!--fila-->
-                            <td align="center">Fabián</td><!-- celda-->
-                            <td align="center">
-                                <input type="radio" id="comportamientoJugador51" name="comportamientoJugador51" class="required" value="jugadorBrusco">
-                            </td>
-                            <td align="center">
-                               <input type="radio" id="comportamientoJugador52" name="comportamientoJugador52" class="required"value="llegadaTarde" >
-                            </td>
-                            <td align="center">         
-                                <input type="radio" id="comportamientoJugador53" name="comportamientoJugador53" value="ausencia">
-                            </td>
-                        <tr class="lineaFormulario"><!--fila-->
-                            <td align="center">Guillermo</td><!-- celda-->
-                            <td align="center">
-                                <input type="radio" id="comportamientoJugador61" name="comportamientoJugador61" class="required" value="jugadorBrusco">
-                            </td>
-                            <td align="center">
-                               <input type="radio" id="comportamientoJugador62" name="comportamientoJugador62" class="required"value="llegadaTarde" >
-                            </td>
-                            <td align="center">         
-                                <input type="radio" id="comportamientoJugador63" name="comportamientoJugador63" value="ausencia">
-                            </td>
-                        <tr class="lineaFormulario"><!--fila-->
-                                <td align="center">Cesar</td><!-- celda-->
-                                <td align="center">
-                                    <input type="radio" id="comportamientoJugador71" name="comportamientoJugador71" class="required" value="jugadorBrusco">
+                        
+                        <!-- FIN linea  Jugador-->     
+                        <tr align="center"class="lineaFormulario"><!--fila-->
+                                    <td rowspan="2">Marcelo</td><!-- celda-->
+                                <td colspan="2" align="center">
+                                    <input type="radio" id="comportamientoJugador11" name="comportamientoJugador11" class="required" value="jugadorBrusco"> 
                                 </td>
-                                <td align="center">
-                                   <input type="radio" id="comportamientoJugador72" name="comportamientoJugador72" class="required"value="llegadaTarde" >
+                                <td rowspan="2" align="center">
+                                   <input type="radio" id="comportamientoJugador12" name="comportamientoJugador12" class="required"value="llegadaTarde" > 
                                 </td>
-                                <td align="center">         
-                                    <input type="radio" id="comportamientoJugador73" name="comportamientoJugador73" value="ausencia">
+                                <td rowspan="2" align="center">         
+                                    <input type="radio" id="comportamientoJugador13" name="comportamientoJugador13" value="ausencia">
                                 </td>
                         </tr>
                         <tr class="lineaFormulario"><!--fila-->
-                                <td align="center">Claudio</td><!-- celda-->
-                                <td align="center">         
-                                    <input type="radio" id="comportamientoJugador81" name="comportamientoJugador81" class="required" value="jugadorBrusco">
-                                </td>
-                                <td align="center">
-                                   <input type="radio" id="comportamientoJugador82" name="comportamientoJugador82" class="required"value="llegadaTarde" >
-                                </td>
-                                <td align="center">         
-                                    <input type="radio" id="comportamientoJugador83" name="comportamientoJugador83" value="ausencia">
-                                </td>
+                            <td align="center">
+                                <input type="radio" id="comportamientoJugador21" name="comportamientoJugador21" class="required" value="jugadorBrusco"> 
+                            </td>
+                            <td  align="center">
+                               <input type="radio" id="comportamientoJugador22" name="comportamientoJugador22" class="required"value="llegadaTarde" > 
+                            </td>
+                        </tr>
+                        <tr align="center"class="lineaFormulario"><!--fila-->
+                                <td rowspan="2">Marcos</td><!-- celda-->
+                            <td colspan="2" align="center">
+                                <input type="radio" id="comportamientoJugador11" name="comportamientoJugador11" class="required" value="jugadorBrusco"> 
+                            </td>
+                            <td rowspan="2" align="center">
+                               <input type="radio" id="comportamientoJugador12" name="comportamientoJugador12" class="required"value="llegadaTarde" > 
+                            </td>
+                            <td rowspan="2" align="center">         
+                                <input type="radio" id="comportamientoJugador13" name="comportamientoJugador13" value="ausencia">
+                            </td>
                         </tr>
                         <tr class="lineaFormulario"><!--fila-->
-                                <td align="center">Alan</td><!-- celda-->
-                                <td align="center">         
-                                    <input type="radio" id="comportamientoJugador91" name="comportamientoJugador91" class="required" value="jugadorBrusco">
-                                </td>
-                                <td align="center">
-                                   <input type="radio" id="comportamientoJugador92" name="comportamientoJugador92" class="required"value="llegadaTarde" >
-                                </td>
-                                <td align="center">         
-                                    <input type="radio" id="comportamientoJugador93" name="comportamientoJugador93" value="ausencia">
-                                </td>
+                            <td align="center">
+                                <input type="radio" id="comportamientoJugador21" name="comportamientoJugador21" class="required" value="jugadorBrusco"> 
+                            </td>
+                            <td  align="center">
+                               <input type="radio" id="comportamientoJugador22" name="comportamientoJugador22" class="required"value="llegadaTarde" > 
+                            </td>
+                        </tr>
+                        <tr align="center"class="lineaFormulario"><!--fila-->
+                                <td rowspan="2">Fernando</td><!-- celda-->
+                            <td colspan="2" align="center">
+                                <input type="radio" id="comportamientoJugador11" name="comportamientoJugador11" class="required" value="jugadorBrusco"> 
+                            </td>
+                            <td rowspan="2" align="center">
+                               <input type="radio" id="comportamientoJugador12" name="comportamientoJugador12" class="required"value="llegadaTarde" > 
+                            </td>
+                            <td rowspan="2" align="center">         
+                                <input type="radio" id="comportamientoJugador13" name="comportamientoJugador13" value="ausencia">
+                            </td>
                         </tr>
                         <tr class="lineaFormulario"><!--fila-->
-                               <td align="center">Juan</td><!-- celda-->
-                                <td align="center">         
-                                    <input type="radio" id="comportamientoJugador101" name="comportamientoJugador101" class="required" value="jugadorBrusco">
-                                </td>
-                                <td align="center">
-                                   <input type="radio" id="comportamientoJugador102" name="comportamientoJugador102" class="required"value="llegadaTarde" >
-                                </td>
-                                <td align="center">         
-                                    <input type="radio" id="comportamientoJugador103" name="comportamientoJugador103" value="ausencia">
-
-                                </td>
-                        </tr>      
+                            <td align="center">
+                                <input type="radio" id="comportamientoJugador21" name="comportamientoJugador21" class="required" value="jugadorBrusco"> 
+                            </td>
+                            <td  align="center">
+                               <input type="radio" id="comportamientoJugador22" name="comportamientoJugador22" class="required"value="llegadaTarde" > 
+                            </td>
+                        </tr>
+                            <tr align="center"class="lineaFormulario"><!--fila-->
+                                <td rowspan="2">Emanuel</td><!-- celda-->
+                            <td colspan="2" align="center">
+                                <input type="radio" id="comportamientoJugador11" name="comportamientoJugador11" class="required" value="jugadorBrusco"> 
+                            </td>
+                            <td rowspan="2" align="center">
+                               <input type="radio" id="comportamientoJugador12" name="comportamientoJugador12" class="required"value="llegadaTarde" > 
+                            </td>
+                            <td rowspan="2" align="center">         
+                                <input type="radio" id="comportamientoJugador13" name="comportamientoJugador13" value="ausencia">
+                            </td>
+                        </tr>
+                        <tr class="lineaFormulario"><!--fila-->
+                            <td align="center">
+                                <input type="radio" id="comportamientoJugador21" name="comportamientoJugador21" class="required" value="jugadorBrusco"> 
+                            </td>
+                            <td  align="center">
+                               <input type="radio" id="comportamientoJugador22" name="comportamientoJugador22" class="required"value="llegadaTarde" > 
+                            </td>
+                        </tr>
+                        
+                        
+                        
                     </table>
                     <div id="divBotonConfirmar" class="controls send-btn" width="700px">
                         <button type="submit" class="contour-btn contour-btn30 red" width="700px!important">Guardar Cambios</button>
