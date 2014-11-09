@@ -6,17 +6,20 @@
     
 <head>
         <meta charset="utf-8">
-        <title>OPF5 - Nuevo Jugador</title>
+        <title>OPF5 - Partidos Jugados</title>
         <link rel="icon" type="img/ico" href="img/loading.gif">
+
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/solido.css">
      	<link rel="stylesheet" href="css/opf5.css">
+		<!--[if IE 8]><link rel="stylesheet" href="css/ie8.css"><![endif]-->
         <link rel="stylesheet" href="css/isotope.css">
         <link rel="stylesheet" href="css/responsive.css">
         <link rel="stylesheet" type="text/css" href="css/vegas/jquery.vegas.css">
         <link rel="stylesheet" href="css/popup/magnific-popup.css">
  		<link rel="stylesheet" href="js/superslides-0.6.2/dist/stylesheets/superslides.css">
+
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 		<script src="../fast.fonts.net/jsapi/3dca1e78-579f-4502-8da9-3eb91453e0dc.js"></script>
         		
@@ -29,9 +32,19 @@
 		.custom-date-style {
 			background-color: red !important;
 		}
+		
+		.divConfirmarPartido{
+			width: auto;
+		}
+		
+		#divBotonConfirmar{
+			margin-top:10px;
+			width: 700px!important;
+		}
 		</style>
 		<!-- Fin codigo time date picker-->
 
+        
         <link type="text/css" rel="stylesheet" href="css/dhtmlgoodies_calendar.css?random=20051112" media="screen">
 		<SCRIPT type="text/javascript" src="js/dhtmlgoodies_calendar.js?random=20060118"></script>
 
@@ -49,12 +62,11 @@
             <div class="logo">
                 <img src="img/logos/logoSistema.jpg" width="70" alt='logoOPF5'>
             </div>
-            
             <ul class="menua">
                 <li><a href="administradorHome.html">Home</a></li>
-                <li class="currentMenua"><a href="administradorPanelPartidos.html">Partidos</a></li>
+                <li><a href="administradorPanelPartidos.html">Partidos</a></li>
                 <li><a href="administradorGenerarFormaciones.html">Generar<br>Formaciones</a></li>
-                <li><a href="administradorConfirmarEquipos.html">Partidos<br>Jugados</a></li>
+                <li class="currentMenua"><a href="administradorPartidosJugados.html">Partidos<br>Jugados</a></li>
                 <li><a href="administradorSedes.html">Sedes</a></li>
                 <li><a>Jugadores</a>
                     <ul>
@@ -64,38 +76,36 @@
                 </li>
                 <li><a href="index.html">Cerrar<br>Sesión</a></li>
             </ul>
-            
         </header>
 
         <!--SECCION Home-->
         <article id=anchor2 class="content light">
-        	<header class="title one">Resultado del Alta de partido</header>
+        	<header class="title one">Partidos Jugados</header>
             <div class="spacer"></div>
-
-            <div align="center">
-	            	<form action="" method="get" id="" class="" >
-	            		<table width="600px" border="1" align="center" class="tablaOPF2">
-	            			<tr>
-	            				<th colspan="2">Se ha creado el siguiente partido</th>
-	            			</tr>
-	            			<tr>
-	            				<td width="40%" class="negrita">Fecha</td>
-	            				<td width="60%">10/12/14</td>
-	            			</tr>
-	            			<tr>
-	            				<td class="negrita">Hora</td>
-	            				<td>18:00</td>
-	            			</tr>
-	            			<tr>
-	            				<td class="negrita">Sede</td>
-	            				<td>Sede Caballito</td>
-	            			</tr>
-	            			
-	            		</table>
-	                </form>
-                    <div class="botonOPF1" align="center"><a href="administradorPanelPartidos.html">Volver al panel de partidos</a></div>
-
-               </div>
+            <div class="title two">Elija un partido</div>
+            <div id="div1">
+            	<form action="administradorPartidosJugados2.html" method="get" id="" class="peThemeContactForm" >
+                    <div id="personal" class="bay form-horizontal">
+                        <div class="control-group"><!--partido field-->
+                            <div class="controls">
+                            	Partido<br>
+                                <label>
+                                    <select id="partido_Jugado" name="partido_Jugado">
+                                        <option selected>10/11/2014 22:00 - Sede Palermo</option>
+                                        <option>10/12/2014 19:00 - Sede Almagro</option>
+                                        <option>22/12/2014 21:00 - Sede Villa Lugano</option>
+                                        <option>27/12/2014 22:00 - Sede Flores</option>
+                                    </select>
+                                </label>                                
+                            </div>
+                        </div>  
+                        <br>
+	                    <div class="submitOPF1" align="center">
+                        	<input type="submit" value="Ver jugadores del partido seleccionado" class="contour-btn contour-btn30 red">
+	                    </div>
+                    </div>
+                </form>
+            </div>
         </article>
         <!--FIN SECCION SERVICIOS-->
         <script>

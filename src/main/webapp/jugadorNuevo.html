@@ -7,15 +7,10 @@
 <head>
         <meta charset="utf-8">
         <title>OPF5 - Proponer un jugador</title>
-
-
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/solido.css">
      	<link rel="stylesheet" href="css/opf5.css">
-		<!--[if IE 8]><link rel="stylesheet" href="css/ie8.css"><![endif]-->
         <link rel="stylesheet" href="css/isotope.css">
         <link rel="stylesheet" href="css/responsive.css">
         <link rel="stylesheet" type="text/css" href="css/vegas/jquery.vegas.css">
@@ -24,30 +19,12 @@
 		<link rel="stylesheet" href="css/jquery-ui.css">
   		<script src="js/jquery-1.10.2.js"></script>
   		<script src="js/jquery-ui.js"></script>
-  		
-	    <script>
-		  $(function() {
-		    $( "#fechaNacimiento" ).datepicker();
-		  });
-		  </script>
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 		<script src="../fast.fonts.net/jsapi/3dca1e78-579f-4502-8da9-3eb91453e0dc.js"></script>
        
-        
-        <script>        	
-			$(document).ready(function() {
-			    $('.fieldcontent').not('.info').hide();
-			    $('#tipo_Inscripcion').change(function() {
-			        
-			        if ($(this).val() === 'condicional') {
-			            $("textarea[id='condicion_Inscripcion']").prop('disabled',true);
-			        }else{
-			            $("textarea[id='condicion_Inscripcion']").prop('disabled',false);
-			        };
-			    }); 
-			});
-        </script>
 
+        <link type="text/css" rel="stylesheet" href="css/dhtmlgoodies_calendar.css?random=20051112" media="screen">
+		<SCRIPT type="text/javascript" src="js/dhtmlgoodies_calendar.js?random=20060118"></script>
     </head>
  
     <body>
@@ -56,15 +33,6 @@
               <img src="img/loading.gif" alt='loading'>
             </div>
         </div>
-
-        <!--<section id="home" class="clear">-->
-            <!--<div id="anchor1">--><!--<div>
-                <ul class="slider-controls">
-                    <li><a id="vegas-next" class="s-next" href="#"></a></li>
-                    <li><a id="vegas-prev" class="s-prev" href="#"></a></li>
-                </ul>
-            </div>
-        </section>-->
         <div id="logx"></div>
         <header class="header">
             <div class="logo"><img src="img/logos/logoSistema.jpg" width="70" alt='OPF5'></div>
@@ -79,26 +47,9 @@
                 </ul>
             </nav>
         </header>
-        
-        <!-- Script para deshabilitar textarea de condición si el tipo de inscripción no es condicional-->
-        <script  type="text/javascript">
-		function enableElements() {
-		    if ($("#tipo_Inscripcion").val() == 'condicional') {
-		        $("#condicion_Inscripcion").removeAttr('disabled');
-		    	document.getElementById("condicion_Inscripcion").style.background = "#F3F3F3";
-		    }    
-		     
-		    if ($("#tipo_Inscripcion").val() == 'estandar' || $("#tipo_Inscripcion").val() == 'solidaria') {
-		        $("#condicion_Inscripcion").prop('disabled', true);
-		    	document.getElementById("condicion_Inscripcion").style.background = "#fafafa";
-		    }
-		};
-		</script>
-		        
-        
-        <!--SECCION Home-->
+        <!--SECCION PROPONER JUGADOR NUEVO-->
         <article id=anchor2 class="content light">
-        	<header class="title one">Informar Datos</header>
+        	<header class="title one">Proponer Jugador</header>
             <div class="spacer"></div>
             <div class="title two">Complete los datos del jugador propuesto</div>
             <div class="form_insc  dontHide" align="center">
@@ -107,46 +58,46 @@
                         <div class="control-group">
                            <div class="controls datosformularios">
                             Nombre
-                               <input class="required cuadrante" type="text" id="nombre" name="nombre" data-fieldid="0">
+                               <input class=" cuadrante" type="text" id="nombre" name="nombre" data-fieldid="0">
                            </div>
                        </div>   
                         <div class="control-group">
                            <div class="controls datosformularios">
                             Apellido
-                               <input class="required cuadrante" type="text" id="apellido" name="apellido" data-fieldid="0" >
+                               <input class=" cuadrante" type="text" id="apellido" name="apellido" data-fieldid="0" >
                            </div>
                           </div>  
-                            <div class="control-group">
+                        <div class="control-group">
                            <div class="controls datosformularios">
                             Fecha de Nacimiento
-                               <input class="required cuadrante" type="text" id="fechaNacimiento" name="fechaNacimiento" data-fieldid="0">
+                               <input class=" cuadrante" type="text" id="fechaNacimiento" name="fechaNacimiento" value="2014/10/29" readonly >
+	                           <input type="button" value="Cal" onclick="displayCalendar(document.forms[0].fechaNacimiento,'yyyy/mm/dd',this)">
                            </div>
-                            
                        </div>
                         <div class="control-group">
                            <div class="controls datosformularios">
                             Email
-                               <input class="required cuadrante " type="text" id="mail" name="mail" data-fieldid="0" >
+                               <input class=" cuadrante " type="text" id="mail" name="mail" data-fieldid="0" >
                            </div>
-                       </div>                     
-                        
-                          <div class="control-group">
-                           <div class="controls datosformularios">
-                            Numero de Celular
-                               <input class="required cuadrante" type="text" id="celular" name="celular" data-fieldid="0" >
-                           </div>
-                       </div>     
-                        <div class="control-group">
-                            <div class="controls send-btn">
-                                <button type="submit" class="contour-btn contour-btn30 red">Aceptar inscripción</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="notifications">
-                        <div id="contactFormSent" class="formSent alert alert-success">
-                            <strong>Inscripción Exitosa</strong> </div>
-                        <div id="contactFormError" class="formError alert alert-error">
-                            <strong>Ha ocurrido un error!</strong> Por favor chequeá los campos de abajo y corregí el dato indicado.</div>
+                       </div>          
+                       <div class="control-group">	           
+	                       <div class="controls datosformularios">
+	                        Número de Celular
+	                           <input class=" cuadrante" type="text" id="celular" name="celular" data-fieldid="0" >
+	                       </div>
+                       </div>
+                       <div class="control-group">
+		                   <div class="controls send-btn" style="margin-top: 25px;">
+		                       <button type="submit" class="contour-btn contour-btn30 red" onclick="foo1();">Aceptar inscripción</button>
+		                       <script type="text/javascript" charset="utf-8">
+	                       		    function foo1() {
+								        alert("Se han guardado los datos del jugador propuesto.");
+								        window.location="jugadorNuevo.html";
+								        return true;
+								    }
+							   </script>
+		                   </div>
+                       </div>
                     </div>
                 </form>
             </div>

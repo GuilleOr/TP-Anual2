@@ -50,15 +50,6 @@
               <img src="img/loading.gif" alt='loading'>
             </div>
         </div>
-
-        <!--<section id="home" class="clear">-->
-            <!--<div id="anchor1">--><!--<div>
-                <ul class="slider-controls">
-                    <li><a id="vegas-next" class="s-next" href="#"></a></li>
-                    <li><a id="vegas-prev" class="s-prev" href="#"></a></li>
-                </ul>
-            </div>
-        </section>-->
         <div id="logx"></div>
         <header class="header">
             <div class="logo"><img src="img/logos/logoSistema.jpg" width="70" alt='OPF5'></div>
@@ -125,16 +116,18 @@
                         </div>                           
                         <div class="control-group">
                             <div class="controls send-btn">
-                                <button type="submit" class="contour-btn contour-btn30 red boton_MargenSup">Confirmar Baja</button>
+                                <button type="submit" class="contour-btn contour-btn30 red boton_MargenSup" onclick="foo1()">Confirmar Baja</button>
+		                       	<script type="text/javascript" charset="utf-8">
+	                       		    function foo1() {
+								        alert("Baja de partido exitosa");
+								        window.location="jugadorBaja.html";
+								        return true;
+								    }
+							   </script>
                             </div>
                         </div>
                     </div>
-                    <div class="notifications">
-                        <div id="contactFormSent" class="formSent alert alert-success">
-                            <strong>Baja Exitosa con/sin sanción</strong> </div>
-                        <div id="contactFormError" class="formError alert alert-error">
-                            <strong>Ha ocurrido un error!</strong> Por favor chequeá los campos de abajo y corregí el dato indicado.</div>
-                    </div>
+
                 </form>
             </div>
         </article>

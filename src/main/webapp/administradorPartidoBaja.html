@@ -6,7 +6,7 @@
     
 <head>
         <meta charset="utf-8">
-        <title>OPF5-Baja Partido</title>
+        <title>OPF5 - Baja Partido</title>
         <link rel="icon" type="img/ico" href="img/loading.gif">
 
         <link rel="stylesheet" href="css/normalize.css">
@@ -35,21 +35,6 @@
 		</style>
 		<!-- Fin codigo time date picker-->
         
-        <!-- codigo de seguimiento para Goggle Analitycs -->
-		<script type="text/javascript">
-        
-          var _gaq = _gaq || [];
-          _gaq.push(['_setAccount', 'UA-24553021-1']);
-          _gaq.push(['_trackPageview']);
-        
-          (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-          })();
-        
-        </script>
-        
         
         <link type="text/css" rel="stylesheet" href="css/dhtmlgoodies_calendar.css?random=20051112" media="screen">
 		<SCRIPT type="text/javascript" src="js/dhtmlgoodies_calendar.js?random=20060118"></script>
@@ -73,7 +58,7 @@
                 <li><a href="administradorHome.html">Home</a></li>
                 <li class="currentMenua"><a href="administradorPanelPartidos.html">Partidos</a></li>
                 <li><a href="administradorGenerarFormaciones.html">Generar<br>Formaciones</a></li>
-                <li><a href="administradorConfirmarEquipos.html">Partidos<br>Jugados</a></li>
+                <li><a href="administradorPartidosJugados.html">Partidos<br>Jugados</a></li>
                 <li><a href="administradorSedes.html">Sedes</a></li>
                 <li><a>Jugadores</a>
                     <ul>
@@ -112,7 +97,14 @@
             				                     
 	            		</table>
 	                    <div class="submitOPF1" align="center">
-                        	<input type="submit" value="Guardar Modificaciones" class="contour-btn contour-btn30 red">
+                        	<input type="button" value="Eliminar Partido" class="contour-btn contour-btn30 red" onclick="foo1();">
+		                       <script type="text/javascript" charset="utf-8">
+	                       		    function foo1() {
+								        alert("Se ha eliminado el partido");
+								        window.location="administradorPanelPartidos.html";
+								        return true;
+								    }
+							   </script>                        	
 	                    </div>
 	                </form>
                     <div class="botonOPF1" align="center"><a href="administradorPanelPartidos.html">Volver al panel de partidos</a></div>
@@ -141,20 +133,6 @@
         	#campoSede{
         		margin-bottom: 40px;
         	}
-        
-        	.white-popup {
-			  position: relative;
-			  background: #FFF;
-			  width: auto;
-			  margin: 0px auto;
-			  max-width: 100%;
-			}
-			.white-popup .image {height: auto;}
-			.white-popup .info {height: auto; padding: 5px 20px 20px 20px;}
-			.white-popup .info .popup-description {color: #555; font-size: 14px;}
-
-			.white-popup img {width: auto; max-width: 100%;}
-			.mfp-content{height: 90%;}
 		</style>
 
         <script src="../ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>

@@ -366,9 +366,106 @@ Modificado
 	border-bottom-right-radius:3px;
 }
 
+/* TABLAS 3*/
+.tablaOPF3 th td{
+	text-align: center;
+}
+.tablaOPF3 th{
+	text-align: center;
+}
+
+
+.tablaOPF3 a:link {
+	color: #666;
+	font-weight: bold;
+	text-decoration:none;
+}
+.tablaOPF3 a:visited {
+	color: #999999;
+	font-weight:bold;
+	text-decoration:none;
+}
+.tablaOPF3 a:active,
+.tablaOPF3 a:hover {
+	color: #bd5a35;
+	text-decoration:underline;
+}
+.tablaOPF3 {
+	font-family:Arial, Helvetica, sans-serif;
+	color:#666;
+	font-size:12px;
+	text-shadow: 1px 1px 0px #fff;
+	background:#eaebec;
+	margin:20px;
+	border:#ccc 1px solid;
+
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+
+	-moz-box-shadow: 0 1px 2px #d1d1d1;
+	-webkit-box-shadow: 0 1px 2px #d1d1d1;
+	box-shadow: 0 1px 2px #d1d1d1;
+}
+.tablaOPF3 th {
+	padding:21px 25px 22px 25px;
+	border-top:1px solid #fafafa;
+	border-bottom:1px solid #e0e0e0;
+
+	background: #ededed;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#ebebeb));
+	background: -moz-linear-gradient(top,  #ededed,  #ebebeb);
+}
+
+.tablaOPF3 tr:first-child th:first-child{
+	-moz-border-radius-topleft:3px;
+	-webkit-border-top-left-radius:3px;
+	border-top-left-radius:3px;
+}
+.tablaOPF3 tr:first-child th:last-child{
+	-moz-border-radius-topright:3px;
+	-webkit-border-top-right-radius:3px;
+	border-top-right-radius:3px;
+}
+.tablaOPF3 tr{
+	text-align: center;
+	padding-left:20px;
+}
+
+.tablaOPF3 tr td {
+	padding:3px;
+	border-top: 1px solid #ffffff;
+	border-bottom:1px solid #e0e0e0;
+	border-left: 1px solid #e0e0e0;
+	
+	background: #fafafa;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#fafafa));
+	background: -moz-linear-gradient(top,  #fbfbfb,  #fafafa);
+}
+.tablaOPF3 tr.even td{
+	background: #f6f6f6;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#f6f6f6));
+	background: -moz-linear-gradient(top,  #f8f8f8,  #f6f6f6);
+}
+.tablaOPF3 tr:last-child td{
+	border-bottom:0;
+}
+.tablaOPF3 tr:last-child td:first-child{
+	-moz-border-radius-bottomleft:3px;
+	-webkit-border-bottom-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+.tablaOPF3 tr:last-child td:last-child{
+	-moz-border-radius-bottomright:3px;
+	-webkit-border-bottom-right-radius:3px;
+	border-bottom-right-radius:3px;
+}
+
 .negrita{
 	font-weight: bold;
 }
+
+
 
 /*MODAL MASK - VENTANA MODAL*/
 .modalmask {
@@ -556,4 +653,19 @@ transition: all .2s ease-out;
 }
 .submitOPF1 > input{
 	width: 610px!important;
+}
+
+.inputOPF1{
+	height:100%;
+	width: 98%;
+}
+
+.inputOPF1:focus{
+	outline: 0;	
+}
+
+
+#div1{
+	width: 600px;
+	margin: auto;
 }

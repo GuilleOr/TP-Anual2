@@ -6,7 +6,7 @@
     
 <head>
         <meta charset="utf-8">
-        <title>OPF5 - Nuevo Jugador</title>
+        <title>OPF5 - Partido Nuevo</title>
         <link rel="icon" type="img/ico" href="img/loading.gif">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
@@ -54,7 +54,7 @@
                 <li><a href="administradorHome.html">Home</a></li>
                 <li class="currentMenua"><a href="administradorPanelPartidos.html">Partidos</a></li>
                 <li><a href="administradorGenerarFormaciones.html">Generar<br>Formaciones</a></li>
-                <li><a href="administradorConfirmarEquipos.html">Partidos<br>Jugados</a></li>
+                <li><a href="administradorPartidosJugados.html">Partidos<br>Jugados</a></li>
                 <li><a href="administradorSedes.html">Sedes</a></li>
                 <li><a>Jugadores</a>
                     <ul>
@@ -74,7 +74,7 @@
             <div class="title two">Complete los datos del nuevo partido</div>
                 <div class="form_insc  dontHide" align="center">
             	<form method="post" action="administradorPartidoNuevo_R.html">
-	                    <table width="500px" cellspacing='0'>
+	                    <table width="500px" cellspacing='0' cellpadding="4">
 	                        <tr class="lineaFormulario"><!--fila-->
 	                                <td>Fecha</td><!-- celda-->
 	                                <td>
@@ -103,7 +103,14 @@
 	                        <tr class="lineaFormulario">
 	                            <td colspan="2">
 	                                <div class="controls send-btn">
-	                                	<input type="submit" value="Crear Partido" class="contour-btn contour-btn30 red">
+	                                	<input type="button" value="Crear Partido" class="contour-btn contour-btn30 red" onclick="foo1()">
+				                       <script type="text/javascript" charset="utf-8">
+			                       		    function foo1() {
+										        alert("Se ha creado un nuevo partido");
+										        window.location="administradorPanelPartidos.html";
+										        return true;
+										    }
+									   </script>
 	                                </div>
 	                            </td>
 	                        </tr>
@@ -141,19 +148,6 @@
         		margin-bottom: 40px;
         	}
         
-        	.white-popup {
-			  position: relative;
-			  background: #FFF;
-			  width: auto;
-			  margin: 0px auto;
-			  max-width: 100%;
-			}
-			.white-popup .image {height: auto;}
-			.white-popup .info {height: auto; padding: 5px 20px 20px 20px;}
-			.white-popup .info .popup-description {color: #555; font-size: 14px;}
-
-			.white-popup img {width: auto; max-width: 100%;}
-			.mfp-content{height: 90%;}
 		</style>
 
         <script src="../ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>

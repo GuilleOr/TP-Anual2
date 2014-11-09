@@ -22,21 +22,7 @@
 
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 		<script src="../fast.fonts.net/jsapi/3dca1e78-579f-4502-8da9-3eb91453e0dc.js"></script>
-        
-        <!-- codigo de seguimiento para Goggle Analitycs -->
-		<script type="text/javascript">
-        
-          var _gaq = _gaq || [];
-          _gaq.push(['_setAccount', 'UA-24553021-1']);
-          _gaq.push(['_trackPageview']);
-        
-          (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-          })();
-        
-        </script>
+
         
     </head>
     
@@ -56,10 +42,9 @@
             
             <ul class="menua">
                 <li><a href="administradorHome.html">Home</a></li>
-                <li><a>Partidos</a>
-                </li>
+                <li><a href="administradorPanelPartidos.html">Partidos</a></li>
                 <li><a href="administradorGenerarFormaciones.html">Generar<br>Formaciones</a></li>
-                <li><a href="administradorConfirmarEquipos.html">Partidos<br>Jugados</a></li>
+                <li><a href="administradorPartidosJugados.html">Partidos<br>Jugados</a></li>
                 <li><a href="administradorSedes.html">Sedes</a></li>
                 <li><a>Jugadores</a>
                     <ul>
@@ -112,21 +97,22 @@
                              <div class="controls">
                             	Jugador Propuesto
 		                    	<label>
-                                            <select id="jugadorPropuesto" name="jugadorPropuesto">
-
-                                                <option value="pedro">Pedro</option>
-                                                <option value="lucas">Lucas</option>
-                                                <option value="marcelo">Marcelo</option>
-                                            </select>
-                                        </label>                                
+	                                <select id="jugadorPropuesto" name="jugadorPropuesto">
+	
+	                                    <option value="pedro">Pedro</option>
+	                                    <option value="lucas">Lucas</option>
+	                                    <option value="marcelo">Marcelo</option>
+	                                </select>
+	                            </label>                                
                              </div>
                             <div class="controls">
                             	Confirmar<br>
 		                    	<label>
-                                            <select id="propuesto" name="propuesto" onchange="enableElements();">
-                                                <option value="aceptar">Aceptar</option>
-                                                <option value="rechazar">Rechazar</option>								    </select>
-                                        </label>                                
+                                    <select id="propuesto" name="propuesto" onchange="enableElements();">
+                                        <option value="aceptar">Aceptar</option>
+                                        <option value="rechazar">Rechazar</option>								    
+                                    </select>
+                                </label>                                
                         	</div>
                         </div>                       
                         <div class="control-group"><!--message field -->
@@ -140,15 +126,16 @@
                        </div>    
                         <div class="control-group">
                             <div class="controls send-btn">
-                                <button type="submit" class="contour-btn contour-btn30 red">Aceptar Jugador</button>
+                                <button type="button" class="contour-btn contour-btn30 red" onclick="foo1()">Responder Solicitud</button>
+	                       		<script type="text/javascript" charset="utf-8">
+	                       		    function foo1() {
+								        alert("Solicitud respondida");
+								        window.location="administradorJugadoresSolicitudes.html";
+								        return true;
+								    }
+							    </script>
                             </div>
                         </div>
-                    </div>
-                    <div class="notifications">
-                        <div id="contactFormSent" class="formSent alert alert-success">
-                            <strong>Incorporación Exitosa</strong> </div>
-                        <div id="contactFormError" class="formError alert alert-error">
-                            <strong>Ha ocurrido un error!</strong> Por favor chequeá los campos de abajo y corregí el dato indicado.</div>
                     </div>
                 </form>
             </div>
