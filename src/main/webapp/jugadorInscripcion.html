@@ -7,16 +7,6 @@
 <head>
         <meta charset="utf-8">
         <title>OPF5</title>
-<!--        <link rel="icon" type="img/ico" href="img/ITR_favicon.ico">
-        <link rel="icon" type="img/ico" href="img/ITR_favicon.html">
-        <meta name="description" content="Con más de 30 años de experiencia, brindamos soluciones integrales en sistemas y el acceso a nuevas tecnologías. Conformamos un equipo de trabajo dinámico con más de 400 profesionales apasionados por proponer y generar soluciones de calidad. Nuestros servicios más destacados: Desarrollos llave en mano, QA y Testing, Monitoreo de aplicaciones, Búsqueda y Selección de profesionales IT, venta de licencias de hardware y software">
-        
-        <meta name="keywords" content="IT Resources, ITR, Daeva, IT, tecnología, staffing de recursos, testing, licencias IBM, web services, software, software factory, consultoría tecnológica, consultoría tecnológica, consultoría de análisis, monitoreo remoto de incidencias, capacitación, desarrollos a medida, desarrollos llave en mano, implementación y migración, implementación y migración, recruiting, búsqueda y selección de personal IT, servicios de calidad, tercerización de testing, tercerización de testing, arquitectura orientada a servicios, SOA, SAP, Java, Java J2EE, Struts, Struts 1 y 2, Spring Framework, Java Server Faces, Hibernate, GWT, FreeMarker, JBPM, Tiles, Velocity, Seam, Drools, Wicket, Ibatis, EJB, Ajax, JMS, Flex, Python, Ruby, PHP, SWT, JDBC, DB2, C++, C#, cobol, ASP, ASP.NET, .NET, oracle, visual basic, mainframe, AS 400, power builder, QA, quality assurance, calidad, CMMI, ISO 9001:2008, analista de sistemas, analista funcional, analista programador, lider de proyecto, project manager, arquitecto, programación, PMO, Optics, Ingenieros,PL/SQL, Analista de procesos, Administrador Jboss, Operador, Soporte Técnico, Operador DataCenter, Drupal, QC, engineer, Operador, Técnico, Supervisor, management, DBA, Coordinador IT, Network Designer, Game Developer, NOC">
-        
-        <meta name="viewport" content="width=device-width">
-
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/solido.css">
@@ -30,21 +20,6 @@
 
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 		<script src="../fast.fonts.net/jsapi/3dca1e78-579f-4502-8da9-3eb91453e0dc.js"></script>
-        
-        <!-- codigo de seguimiento para Goggle Analitycs -->
-		<script type="text/javascript">
-        
-          var _gaq = _gaq || [];
-          _gaq.push(['_setAccount', 'UA-24553021-1']);
-          _gaq.push(['_trackPageview']);
-        
-          (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-          })();
-        
-        </script>
         
         <script>        	
 			$(document).ready(function() {
@@ -68,15 +43,6 @@
               <img src="img/loading.gif" alt='loading'>
             </div>
         </div>
-
-        <!--<section id="home" class="clear">-->
-            <!--<div id="anchor1">--><!--<div>
-                <ul class="slider-controls">
-                    <li><a id="vegas-next" class="s-next" href="#"></a></li>
-                    <li><a id="vegas-prev" class="s-prev" href="#"></a></li>
-                </ul>
-            </div>
-        </section>-->
         <div id="logx"></div>
         <header class="header">
             <div class="logo"><img src="img/logos/logoSistema.jpg" width="70" alt='opf5'></div>
@@ -148,15 +114,16 @@
                         </div>       
                         <div class="control-group">
                             <div class="controls send-btn">
-                                <button type="submit" class="contour-btn contour-btn30 red">Aceptar inscripción</button>
+                                <button type="submit" class="contour-btn contour-btn30 red" onclick="foo1()">Aceptar inscripción</button>
+		                        <script type="text/javascript" charset="utf-8">
+	                       		    function foo1() {
+								        alert("Inscripción Exitosa");
+								        window.location="jugadorInscripcion.html";
+								        return true;
+								    }
+							   </script>
                             </div>
                         </div>
-                    </div>
-                    <div class="notifications">
-                        <div id="contactFormSent" class="formSent alert alert-success">
-                            <strong>Inscripción Exitosa</strong> </div>
-                        <div id="contactFormError" class="formError alert alert-error">
-                            <strong>Ha ocurrido un error!</strong> Por favor chequeá los campos de abajo y corregí el dato indicado.</div>
                     </div>
                 </form>
             </div>
