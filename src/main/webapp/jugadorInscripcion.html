@@ -108,8 +108,18 @@
                         </div>                       
                         <div class="control-group"><!--message field -->
                             <div class="controls">
-                            	Condición
+                            	Condición<br>
+                                <!--
                                 <textarea id="condicionInscripcion" name="condicionInscripcion" disabled='disabled' rows="12" class="span9" data-fieldid="2" style="background-color:#fafafa "></textarea>
+	    	                	-->
+	    	                	<label>
+                                    <select id="condicionInscripcion" name="condicionInscripcion" disabled='disabled'onchange="enableElements();">
+                                        <option value="1">Partido con 6 jugadores mayores de 30</option>
+                                        <option value="2">Partido con 4 jugadores menores de 30</option>
+                                        <option value="3">Partido en sede Palermo</option>
+                                    </select>
+                                </label>  
+                            
                             </div>
                         </div>       
                         <div class="control-group">
