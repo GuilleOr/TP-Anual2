@@ -6,7 +6,7 @@
     
 <head>
         <meta charset="utf-8">
-        <title>OPF5 - Modificación del Partido</title>
+        <title>OPF5 - Resultado de la Búsqueda</title>
         <link rel="icon" type="img/ico" href="img/loading.gif">
 
         <link rel="stylesheet" href="css/normalize.css">
@@ -21,8 +21,7 @@
  		<link rel="stylesheet" href="js/superslides-0.6.2/dist/stylesheets/superslides.css">
 
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-		<script src="../fast.fonts.net/jsapi/3dca1e78-579f-4502-8da9-3eb91453e0dc.js"></script>
-
+		<script src="../fast.fonts.net/jsapi/3dca1e78-579f-4502-8da9-3eb91453e0dc.js"></script> 
         <link type="text/css" rel="stylesheet" href="css/dhtmlgoodies_calendar.css?random=20051112" media="screen">
 		<SCRIPT type="text/javascript" src="js/dhtmlgoodies_calendar.js?random=20060118"></script>
 
@@ -34,8 +33,8 @@
               <img src="img/loading.gif" alt='loading'>
             </div>
         </div>
-	
         <div id="logx"></div>
+        
         <header class="header">
             <div class="logo">
                 <img src="img/logos/logoSistema.jpg" width="70" alt='logoOPF5'>
@@ -55,96 +54,85 @@
                 <li><a href="index.html">Cerrar<br>Sesión</a></li>
             </ul>
         </header>
-        
-		<br><br><br><br>
+
         <!--SECCION Modificacion de Partido-->
         <article id="anchor2"  class="content light">
-        	<header class="title one">ABM de Partidos</header>
+        	<header class="title one">Resultado de la búsqueda de jugadores</header>
             <div class="spacer"></div>
 			<div class="title two"></div>
 			<div align="center">
-            	<form action="" method="get" id="" class="" >
-            		<table width="800px" border="1" align="center" class="tablaOPF1">
+            		<table width="600px" border="1" align="center" class="tablaOPF1">
             			<tr>
-            				<th width="15%">Fecha</th>
-            				<th width="15%">Hora</th>
-            				<th width="50%">Sede</th>
-            				<th colspan="2" width="20%"><a href="administradorPartidoNuevo.html"><img src="img/opf/add.png" title="Nuevo Partido"></a></th>
+            				<th width="60%">Jugador</th>
+            				<th width="40%">Ver información del jugador</th>
             			</tr>
             			<!-- INICIO FILA-->
             			<tr>
-            				<td>10/12/14</td>
-            				<td>18:00</td>
-            				<td> </td>
+            				<td>Pepe</td>
             				<td>
-            					<a href="administradorPartidoModificacion.html?Id_Partido=1"><!-- Envio en el url el Id_Partido-->
-            						<img src="img/opf/editar3.png" title="Modificar Partido">
+            					<a>
+            						<img src="img/opf/masInfo.png" title="Ver información del jugador" onclick="ventanaNueva('Pepe')"><!-- Envio en el url el Usuario (PK de la tabla Usuarios)-->	
             					</a>
             				</td>
-            				<td>
-            					<a href="administradorPartidoBaja.html?Id_Partido=1"><!-- Envio en el url el Id_Partido-->
-            						<img src="img/opf/borrar.png" title="Eliminar Partido">
-        						</a>
-    						</td>
             			</tr>
             			<!-- FIN FILA-->
             			
             			<!-- Eliminar desde acá!-->
             			<tr>
-            				<td>11/12/14</td>
-            				<td>21:00</td>
-            				<td>Sede Barracas</td>
+            				<td>Mario</td>
             				<td>
-            					<a href="administradorPartidoModificacion.html?Id_Partido=5">
-            						<img src="img/opf/editar3.png" alt="Modificar Partido">
+            					<a>
+            						<img src="img/opf/masInfo.png" title="Ver información del jugador" onclick="ventanaNueva('Mario')"><!-- Envio en el url el Usuario (PK de la tabla Usuarios)-->	
             					</a>
             				</td>
-            				<td>
-            					<a href="administradorPartidoBaja.html?Id_Partido=5">
-            						<img src="img/opf/borrar.png" alt="Eliminar Partido">
-        						</a>
-    						</td>
             			</tr>
             			<tr>
-            				<td>22/12/14</td>
-            				<td>22:00</td>
-            				<td>Sede Caballito</td>
+            				<td>Luis</td>
             				<td>
-            					<a href="administradorPartidoModificacion.html?Id_Partido=6">
-            						<img src="img/opf/editar3.png" alt="Modificar Partido">
+            					<a>
+            						<img src="img/opf/masInfo.png" title="Ver información del jugador" onclick="ventanaNueva('Luis')"><!-- Envio en el url el Usuario (PK de la tabla Usuarios)-->	
             					</a>
             				</td>
-            				<td>
-            					<a href="administradorPartidoBaja.html?Id_Partido=6">
-            						<img src="img/opf/borrar.png" alt="Eliminar Partido">
-        						</a>
-    						</td>
             			</tr>
             			<tr>
-            				<td>27/12/14</td>
-            				<td>18:00</td>
-            				<td>Sede Belgrano</td>
+            				<td>Sergio</td>
             				<td>
-            					<a href="administradorPartidoModificacion.html?Id_Partido=8">
-            						<img src="img/opf/editar3.png" alt="Modificar Partido">
+            					<a>
+            						<img src="img/opf/masInfo.png" title="Ver información del jugador" onclick="ventanaNueva('Sergio')"><!-- Envio en el url el Usuario (PK de la tabla Usuarios)-->	
             					</a>
             				</td>
+            			</tr>
+            			<tr>
+            				<td>Marcos</td>
             				<td>
-            					<a href="administradorPartidoBaja.html?Id_Partido=8">
-            						<img src="img/opf/borrar.png" alt="Eliminar Partido">
-        						</a>
-    						</td>
+            					<a>
+            						<img src="img/opf/masInfo.png" title="Ver información del jugador" onclick="ventanaNueva('Marcos')"><!-- Envio en el url el Usuario (PK de la tabla Usuarios)-->	
+            					</a>
+            				</td>
+            			</tr>
+            			<tr>
+            				<td>Lucas</td>
+            				<td>
+            					<a>
+            						<img src="img/opf/masInfo.png" title="Ver información del jugador" onclick="ventanaNueva('Lucas')"><!-- Envio en el url el Usuario (PK de la tabla Usuarios)-->	
+            					</a>
+            				</td>
             			</tr>
             			<!-- Eliminar hasta acá! -->
-            			
             		</table>
-                </form>
            </div>
             </div>
             
         </article>
-        <!--FIN SECCION Modificación de Partidos-->
+        <!--FIN SECCION SERVICIOS-->
         
+		<script type="text/javascript">
+		function ventanaNueva(nombreJugador){ 
+			var pagina = "administradorJugadorDatos.html?Usuario=".concat(nombreJugador)
+			window.open(pagina,'nuevaVentana','width=1350, height=670')
+		}
+		</script>
+
         <script src="../ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
         <script src="../ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
@@ -152,8 +140,10 @@
         <script src="js/jquery.smoothwheel.js"></script>
         <script src="js/main.js"></script>
         <script src="js/jquery.inview.js"></script>
+        <script type="text/javascript" 	src="js/jquery.sticky.js"></script>
         <script type="text/javascript" src="js/caroussel/jquery.easing.1.3.js"></script>
         <script type="text/javascript" 	src="js/portfolio.js"></script>
+        <!--<script type="text/javascript" src="js/vegas/jquery.vegas.js"></script>-->
 		<script src="js/superslides-0.6.2/dist/jquery.superslides.js" type="text/javascript" charset="utf-8"></script>
 
         <script type="text/javascript" src="js/jquery.hoverdir.js"></script>
@@ -162,6 +152,7 @@
 		<script type="text/javascript" src="js/caroussel/jquery.contentcarousel.js"></script>
 		<script src="js/jquery.isotope.min.js"></script>
         <script src="js/plugins.js"></script>
+        <!--<script type="text/javascript" src="js/vegas/vegas_slider.js"></script>-->
         <script src="js/jquery.validate.js"></script>
         <script src="js/jquery.form.js"></script>
         <script src="js/test.js"></script>

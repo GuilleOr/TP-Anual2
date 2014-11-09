@@ -465,6 +465,20 @@ Modificado
 	font-weight: bold;
 }
 
+/*TABLA INFRACCIONES*/
+#tablaInfraccion{
+	width: 600px;
+}
+
+#tablaInfraccion th{
+	padding:10px;
+	border-top:1px solid #fafafa;
+	border-bottom:1px solid #e0e0e0;
+
+	background-color: black!important;
+	
+	color: white;
+}
 
 
 /*MODAL MASK - VENTANA MODAL*/
